@@ -1,4 +1,4 @@
-<script> window.textOverride = {
+window.textOverride = {
 "profile_alt_logo": "Gérer mon profil",
 "profile_nav_profile": "Mon profil",
 "profile_nav_member": "Mon abonnement",
@@ -120,4 +120,4 @@
 "login_button": "Se connecter ici",
 "login_need": "Besoin d'un compte ?",
 "login_signup": "S'inscrire ici",
-} </script>
+}
