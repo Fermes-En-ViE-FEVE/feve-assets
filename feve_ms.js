@@ -1,9 +1,3 @@
-<!--Redirect if JS is disabled-->
-
-<noscript>
-   <meta http-equiv="refresh" content="0; url=https://www.feve.co" />
-</noscript>
-
 <script> window.textOverride = {
 "profile_alt_logo": "Gérer mon profil",
 "profile_nav_profile": "Mon profil",
@@ -127,6 +121,3 @@
 "login_need": "Besoin d'un compte ?",
 "login_signup": "S'inscrire ici",
 } </script>
-  
- <!-- Memberstack --> 
-<script src="https://api.memberstack.io/static/memberstack.js?webflow" data-memberstack-id="c6ddac74330f695659d8b6bb1a368d90"> </script>
