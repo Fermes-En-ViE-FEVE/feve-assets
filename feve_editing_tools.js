@@ -8,7 +8,7 @@ const request_options = (type) => {
 	var params = { "Key": 
   					{
                       "userID":userID,
-                      "commentID":'{{wf {&quot;path&quot;:&quot;slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}'
+                      "commentID":contentID
                     },
                  "Comment": type == 'update' ? quill.getContents() : ""
 	};
@@ -69,31 +69,5 @@ var quill = new Quill('#commentTextID', {
 
 });
 
-// Création des sommaires automatiques
 
-(function() {
-  // w-richtext is used in your html, feel free to replace to your correct one
-  document.querySelectorAll('.w-richtext p').forEach(function(n) {
-    // Grab the html content of p tag
-    var html = n.innerHTML;
-    // Replace the entity number globally
-    var decodedHtml = html.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
-    // Parse the content back
-    n.innerHTML = decodedHtml;
-  });
-})();
-
-document.getElementById("content").querySelectorAll('{{wf {&quot;path&quot;:&quot;toc-based-on&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}').forEach(function(heading, i) { // runs a function for all headings inside your rich text element
-  heading.setAttribute("id", "toc-" + i); // gives each heading a unique id
-  heading.classList.add("content-h");
-  const item = document.createElement("a"); // creates an anchor element called "item" for each heading
-  item.innerHTML = heading.innerHTML; // gives each item the text of the corresponding heading
-  ('{{wf {&quot;path&quot;:&quot;toc-based-on&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}').split(",").forEach(function(x) { // runs a function for each item in your headings list
-    if (heading.tagName.toLowerCase()==x) {
-      item.classList.add("tocitem", "toc-" + x); // gives each item the correct class
-    }
-  });
-  item.setAttribute("href", "#toc-" + i); // gives each item the correct anchor link
-  document.querySelector("#toc").appendChild(item); // places each item inside the Table of Contents div
-});
 
