@@ -38,16 +38,7 @@ const updateComment = async() => {
       	$('#commentUpdateButton').prop('value', 'Enregistré !');
 }	   
 
-
-// On stocke l'ID user dont on a besoin pour read & update, dès que Memberstack est prêt
-MemberStack.onReady.then(function(member) {   
-	if (member.loggedIn) {
-		userID = member["id"];
-		readComment();
-	}
-});
-
-function initQuillJS(toolBarOptions, richTextId) {
+const initQuillJS = (toolBarOptions, richTextId) => {
 
 		// Chargement de l'éditeur de rich text
 	var fonts = ['sofia', 'slabo', 'roboto', 'inconsolata', 'ubuntu'];
@@ -63,7 +54,21 @@ function initQuillJS(toolBarOptions, richTextId) {
 	      theme: 'snow'
 
 	});
+
 }
+
+// On stocke l'ID user dont on a besoin pour read & update, dès que Memberstack est prêt
+MemberStack.onReady.then(function(member) {   
+	if (member.loggedIn) {
+		initQuillJS(toolBarOptions, richTextId);
+		userID = member["id"];
+		readComment();
+	}
+});
+
+
+
+
 
 
 
