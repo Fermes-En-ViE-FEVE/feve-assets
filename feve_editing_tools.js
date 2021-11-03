@@ -2,6 +2,9 @@
 // Variable globale stockant le userID de Memberstack, quand Memberstack sera chargé (voir plus bas)
 var userId = '';
 
+// Variable globale référençant l'éditeur de texte riche
+var quill = '';
+
 // Function construisant les paramètres de la request utilisée pour read & update les comments
 const request_options = (type) => {
 
@@ -47,7 +50,7 @@ const initQuillJS = (toolBarOptions, richTextId) => {
 	    Quill.register(Font, true);
 
 
-	var quill = new Quill(richTextId, {
+	var editor = new Quill(richTextId, {
 	      modules: {
 	        'toolbar': toolBarOptions,
 	      },
@@ -55,12 +58,13 @@ const initQuillJS = (toolBarOptions, richTextId) => {
 
 	});
 
+	return editor;
 }
 
 // On stocke l'ID user dont on a besoin pour read & update, dès que Memberstack est prêt
 MemberStack.onReady.then(function(member) {   
 	if (member.loggedIn) {
-		initQuillJS(toolBarOptions, richTextId);
+		quill = initQuillJS(toolBarOptions, richTextId);
 		userId = member["id"];
 		readComment();
 	}
