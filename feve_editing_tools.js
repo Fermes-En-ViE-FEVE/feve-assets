@@ -58,6 +58,12 @@ const initQuillJS = (toolBarOptions, richTextId) => {
 
 	});
 
+	editor.on('text-change', function(delta, oldDelta, source) {
+		  if (source=='user' && $('#commentUpdateButton').prop('value') == 'Enregistré !') {
+		  		$('#commentUpdateButton').prop('value', 'Enregistrer');
+		  }
+	});
+
 	return editor;
 }
 
