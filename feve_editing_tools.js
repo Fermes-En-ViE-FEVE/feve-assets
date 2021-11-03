@@ -47,7 +47,7 @@ MemberStack.onReady.then(function(member) {
 	}
 });
 
-function initQuillJS(idToolBar, idRichTextZone) {
+function initQuillJS(toolBarOptions, richTextId) {
 
 		// Chargement de l'éditeur de rich text
 	var fonts = ['sofia', 'slabo', 'roboto', 'inconsolata', 'ubuntu'];
@@ -56,17 +56,9 @@ function initQuillJS(idToolBar, idRichTextZone) {
 	    Quill.register(Font, true);
 
 
-	var quill = new Quill(idRichTextZone, {
+	var quill = new Quill(richTextId, {
 	      modules: {
-	        'toolbar': idToolBar, [
-	          [ 'bold', 'italic', 'underline', 'strike' ],
-	          [{ 'color': [] }, { 'background': [] }],
-	          [{ 'header': '2' }, { 'header': '3' }, 'blockquote', 'code-block' ],
-	          [{ 'list': 'ordered' }, { 'list': 'bullet'}, { 'list': 'check'}, { 'indent': '-1' }, { 'indent': '+1' }],
-	          [ { 'align': [] }],
-	          [ 'link' ],
-	          [ 'clean' ]
-	        ],
+	        'toolbar': toolBarOptions,
 	      },
 	      theme: 'snow'
 
