@@ -1,6 +1,6 @@
 
 // Variable globale stockant le userID de Memberstack, quand Memberstack sera chargé (voir plus bas)
-var userID = '';
+var userId = '';
 
 // Function construisant les paramètres de la request utilisée pour read & update les comments
 const request_options = (type) => {
@@ -8,8 +8,8 @@ const request_options = (type) => {
   // Le contenu du comment n'est passé que pour les update (et non pour les read car inutile)
 	var params = { "Key": 
   					{
-                      "userID":userID,
-                      "commentID":contentID
+                      "userID":userId,
+                      "commentID":contentId
                     },
                  "Comment": type == 'update' ? quill.getContents() : ""
 	};
@@ -61,7 +61,7 @@ const initQuillJS = (toolBarOptions, richTextId) => {
 MemberStack.onReady.then(function(member) {   
 	if (member.loggedIn) {
 		initQuillJS(toolBarOptions, richTextId);
-		userID = member["id"];
+		userId = member["id"];
 		readComment();
 	}
 });
