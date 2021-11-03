@@ -1,3 +1,4 @@
+
 // Variable globale stockant le userID de Memberstack, quand Memberstack sera chargé (voir plus bas)
 var userID = '';
 
@@ -45,29 +46,33 @@ MemberStack.onReady.then(function(member) {
 		readComment();
 	}
 });
-  
-// Chargement de l'éditeur de rich text
-var fonts = ['sofia', 'slabo', 'roboto', 'inconsolata', 'ubuntu'];
-    var Font = Quill.import('formats/font');
-    Font.whitelist = fonts;
-    Quill.register(Font, true);
+
+function initQuillJS(idToolBar, idRichTextZone) {
+
+		// Chargement de l'éditeur de rich text
+	var fonts = ['sofia', 'slabo', 'roboto', 'inconsolata', 'ubuntu'];
+	    var Font = Quill.import('formats/font');
+	    Font.whitelist = fonts;
+	    Quill.register(Font, true);
 
 
-var quill = new Quill('#commentTextID', {
-      modules: {
-        'toolbar': [
-          [ 'bold', 'italic', 'underline', 'strike' ],
-          [{ 'color': [] }, { 'background': [] }],
-          [{ 'header': '2' }, { 'header': '3' }, 'blockquote', 'code-block' ],
-          [{ 'list': 'ordered' }, { 'list': 'bullet'}, { 'list': 'check'}, { 'indent': '-1' }, { 'indent': '+1' }],
-          [ { 'align': [] }],
-          [ 'link', 'image', 'video' ],
-          [ 'clean' ]
-        ],
-      },
-      theme: 'snow'
+	var quill = new Quill(idRichTextZone, {
+	      modules: {
+	        'toolbar': idToolBar, [
+	          [ 'bold', 'italic', 'underline', 'strike' ],
+	          [{ 'color': [] }, { 'background': [] }],
+	          [{ 'header': '2' }, { 'header': '3' }, 'blockquote', 'code-block' ],
+	          [{ 'list': 'ordered' }, { 'list': 'bullet'}, { 'list': 'check'}, { 'indent': '-1' }, { 'indent': '+1' }],
+	          [ { 'align': [] }],
+	          [ 'link' ],
+	          [ 'clean' ]
+	        ],
+	      },
+	      theme: 'snow'
 
-});
+	});
+}
+
 
 
 
