@@ -121,17 +121,3 @@ window.textOverride = {
 "login_need": "Besoin d'un compte ?",
 "login_signup": "S'inscrire ici",
 }
-
-MemberStack.onReady.then(function(member) {  
-  if (member.loggedIn) {
-    fetch('http://lagrange-dev.feve.co/webhooks/member/logged-in', {
-	    method: 'POST',
-	    headers: {
-	        'Content-Type': 'application/json',
-	    },
-	    body: JSON.stringify({
-	        "token": MemberStack.getToken()
-	    })
-  	})
-  }
-})
