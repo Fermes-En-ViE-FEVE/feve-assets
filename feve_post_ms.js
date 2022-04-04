@@ -6,7 +6,8 @@ MemberStack.onReady.then(function(member) {
 	        'Content-Type': 'application/json',
 	    },
 	    body: JSON.stringify({
-	        "token": MemberStack.getToken()
+	        "token": MemberStack.getToken(),
+		"url": window.location.href
 	    })
   	})
   }
