@@ -1,3 +1,4 @@
+/* QUIZZ QUEL ATELIER AGRICOLE EST FAIT POUR VOUS */
 const absoluteUrl = window.location.href;
 const url = new URL(absoluteUrl);
 const params = new URLSearchParams(url.search);
