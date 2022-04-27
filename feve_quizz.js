@@ -77,7 +77,7 @@ let variables = [
 		"value": 0,
 		"title": "Maraîchage petite/moyenne surface",
 		"score": 0,
-		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c9938e34c3767a021b27_poules.png",
+		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c99306893703edebe70a_maraichage.png",
 		"max": 0,
 		"descNodeId": "maraichage"
 	},
@@ -591,7 +591,7 @@ variables.forEach(variable => {
 	})
 })
 variables.forEach(variable => {
-	variable.score = ((variable.value / variable.max) * 100).toFixed(2)
+	variable.score = math.ceil(((variable.value / variable.max) * 100))
 })
 variables = variables.sort((a, b) => {
   if (parseFloat(b.score) < parseFloat(a.score)) {
