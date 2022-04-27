@@ -603,6 +603,8 @@ variables = variables.sort((a, b) => {
   return 0;
 });
 
+console.log(document.getElementById('firstResultTitle'));
+console.log(variables[0].title);
 document.getElementById('firstResultTitle').innerHtml = variables[0].title
 document.getElementById('firstResultScore').innerHtml = variables[0].score
 document.getElementById('firstResultImg').innerHtml = variables[0].image
