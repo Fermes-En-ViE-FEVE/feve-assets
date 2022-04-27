@@ -75,7 +75,7 @@ let variables = [
 	{
 		"label": maraichages,
 		"value": 0,
-		"title": "Maraîchage petite/moyenne surface",
+		"title": "Maraîchage",
 		"score": 0,
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c99306893703edebe70a_maraichage.png",
 		"max": 0,
