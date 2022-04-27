@@ -20,39 +20,84 @@ let grandesCultures = 'grandesCultures'
 let variables = [
 	{
 		"label": caprinOvinLaitAvecTransfo,
-		"value": 0
+		"value": 0,
+		"title": "Caprin/ovin lait avec transformation fromagère",
+		"score": 0,
+		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c992f87d88c0f39c85a1_fromage.png",
+		"max": 0,
+		"descNodeId": "caprin"
 	},
 	{
 		"label": ovinViande,
-		"value": 0
+		"value": 0,
+		"title": "Ovin viande",
+		"score": 0,
+		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c99387c1ba5ee27ca227_ovin1.png",
+		"max": 0,
+		"descNodeId": "ovin"
 	},
 	{
 		"label": bovinViande,
-		"value": 0
+		"value": 0,
+		"title": "Bovin viande",
+		"score": 0,
+		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c992fa6e89364044d7c5_bovin1.png",
+		"max": 0,
+		"descNodeId": "bovinV"
 	},
 	{
 		"label": bovinLait,
-		"value": 0
+		"value": 0,
+		"title": "Bovin lait",
+		"score": 0,
+		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c992fa6e89364044d7c5_bovin1.png",
+		"max": 0,
+		"descNodeId": "bovinL"
 	},
 	{
 		"label": bovinLaitAvecTransfo,
-		"value": 0
+		"value": 0,
+		"title": "Bovin lait avec transformation fromagère",
+		"score": 0,
+		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c992fa6e89364044d7c5_bovin1.png",
+		"max": 0,
+		"descNodeId": "bovinLT"
 	},
 	{
 		"label": poulesPondeuses,
-		"value": 0
+		"value": 0,
+		"title": "Poules pondeuses avec poulaillers mobiles",
+		"score": 0,
+		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c9938e34c3767a021b27_poules.png",
+		"max": 0,
+		"descNodeId": "poules"
 	},
 	{
 		"label": maraichages,
-		"value": 0
+		"value": 0,
+		"title": "Maraîchage petite/moyenne surface",
+		"score": 0,
+		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c9938e34c3767a021b27_poules.png",
+		"max": 0,
+		"descNodeId": "maraichage"
 	},
 	{
 		"label": paysanBoulanger,
-		"value": 0
+		"value": 0,
+		"title": "Paysan-boulanger",
+		"score": 0,
+		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c9939ba76f02ddcf12be_paysan-boulanger.png",
+		"max": 0,
+		"descNodeId": "paysanBoulanger"
 	},
 	{
 		"label": grandesCultures,
-		"value": 0
+		"value": 0,
+		"title": "Grandes cultures",
+		"score": 0,
+		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c99347309d1f695e60c1_grandes-cultures.png",
+		"max": 0,
+		"descNodeId": "grandesCultures"
 	},
 ];
 
@@ -532,5 +577,40 @@ questions.forEach(question => {
 		})
 	}
 })
+variables.forEach(variable => {
+	questions.forEach(question => {
+	let maxAnswer = 0;
+	question.answers.forEach(answer => {
+		Object.keys(answer.values).forEach(key => {
+			if (variable.label === key && maxAnswer <= answer.values[key]) {
+				maxAnswer = answer.values[key]
+			}
+		})
+	})
+	variable.max += maxAnswer
+	})
+})
+variables.forEach(variable => {
+	variable.score = ((variable.value / variable.max) * 100).toFixed(2)
+})
+variables = variables.sort((a, b) => {
+  if (parseFloat(b.score) < parseFloat(a.score)) {
+    return -1;
+  }
+  if (parseFloat(b.score) > parseFloat(a.score)) {
+    return 1;
+  }
+  return 0;
+});
 
+document.getElementById('firstResultTitle').innerHtml = variables[0].title
+document.getElementById('firstResultScore').innerHtml = variables[0].score
+document.getElementById('firstResultImg').innerHtml = variables[0].image
+document.getElementById('secondResultTitle').innerHtml = variables[1].title
+document.getElementById('secondResultScore').innerHtml = variables[1].score
+document.getElementById('secondResultImg').innerHtml = variables[1].image
+
+
+document.getElementById('firstResultDesc').innerHtml = document.getElementById(variables[0].descNodeId).innerHtml
+document.getElementById('secondResultDesc').innerHtml = document.getElementById(variables[1].descNodeId).innerHtml
 console.log(variables)
