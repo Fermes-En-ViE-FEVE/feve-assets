@@ -603,16 +603,15 @@ variables = variables.sort((a, b) => {
   return 0;
 });
 
-console.log(document.getElementById('firstResultTitle'));
-console.log(variables[0].title);
+
 document.getElementById('firstResultTitle').textContent = variables[0].title
-document.getElementById('firstResultScore').innerHtml = variables[0].score
+document.getElementById('firstResultScore').textContent = variables[0].score
 document.getElementById('firstResultImg').src = variables[0].image
-document.getElementById('secondResultTitle').innerHtml = variables[1].title
-document.getElementById('secondResultScore').innerHtml = variables[1].score
+document.getElementById('secondResultTitle').textContent = variables[1].title
+document.getElementById('secondResultScore').textContent = variables[1].score
 document.getElementById('secondResultImg').src = variables[1].image
 
 
-document.getElementById('firstResultDesc').innerHtml = document.getElementById(variables[0].descNodeId).innerHtml
-document.getElementById('secondResultDesc').innerHtml = document.getElementById(variables[1].descNodeId).innerHtml
+document.getElementById('firstResultDesc').innerHTML = document.getElementById(variables[0].descNodeId).innerHTML
+document.getElementById('secondResultDesc').innerHTML = document.getElementById(variables[1].descNodeId).innerHTML
 console.log(variables)
