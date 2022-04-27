@@ -591,7 +591,7 @@ variables.forEach(variable => {
 	})
 })
 variables.forEach(variable => {
-	variable.score = math.ceil(((variable.value / variable.max) * 100))
+	variable.score = Math.ceil(((variable.value / variable.max) * 100))
 })
 variables = variables.sort((a, b) => {
   if (parseFloat(b.score) < parseFloat(a.score)) {
