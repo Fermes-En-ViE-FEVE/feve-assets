@@ -605,12 +605,12 @@ variables = variables.sort((a, b) => {
 
 console.log(document.getElementById('firstResultTitle'));
 console.log(variables[0].title);
-document.getElementById('firstResultTitle').innerHtml = variables[0].title
+document.getElementById('firstResultTitle').textContent = variables[0].title
 document.getElementById('firstResultScore').innerHtml = variables[0].score
-document.getElementById('firstResultImg').innerHtml = variables[0].image
+document.getElementById('firstResultImg').src = variables[0].image
 document.getElementById('secondResultTitle').innerHtml = variables[1].title
 document.getElementById('secondResultScore').innerHtml = variables[1].score
-document.getElementById('secondResultImg').innerHtml = variables[1].image
+document.getElementById('secondResultImg').src = variables[1].image
 
 
 document.getElementById('firstResultDesc').innerHtml = document.getElementById(variables[0].descNodeId).innerHtml
