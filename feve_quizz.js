@@ -23,7 +23,7 @@ let variables = [
 		"value": 0,
 		"title": "Caprin/ovin lait avec transformation fromagère",
 		"score": 0,
-		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c992f87d88c0f39c85a1_fromage.png",
+		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c98186ef283fea8f4290_caprin.png",
 		"max": 0,
 		"descNodeId": "caprin"
 	},
@@ -41,7 +41,7 @@ let variables = [
 		"value": 0,
 		"title": "Bovin viande",
 		"score": 0,
-		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c992fa6e89364044d7c5_bovin1.png",
+		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/626ffd618e248833308c1942_bovin-viande.png",
 		"max": 0,
 		"descNodeId": "bovinV"
 	},
@@ -50,7 +50,7 @@ let variables = [
 		"value": 0,
 		"title": "Bovin lait",
 		"score": 0,
-		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c992fa6e89364044d7c5_bovin1.png",
+		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/626ffcef521e0004ee2b4c32_bovin-lait.png",
 		"max": 0,
 		"descNodeId": "bovinL"
 	},
@@ -59,7 +59,7 @@ let variables = [
 		"value": 0,
 		"title": "Bovin lait avec transformation fromagère",
 		"score": 0,
-		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c992fa6e89364044d7c5_bovin1.png",
+		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/626fff2c4908f448380bbde8_bovin-fromage.png",
 		"max": 0,
 		"descNodeId": "bovinLT"
 	},
