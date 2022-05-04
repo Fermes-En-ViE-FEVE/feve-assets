@@ -627,7 +627,7 @@ document.getElementById('secondResultImg').src = variables[1].image
 document.getElementById('firstResultDesc').innerHTML = document.getElementById(variables[0].descNodeId).innerHTML
 document.getElementById('secondResultDesc').innerHTML = document.getElementById(variables[1].descNodeId).innerHTML
 
-sessionStorage.setItem("result1", variables[0].title)
-sessionStorage.setItem("result2", variables[1].title) 
+sessionStorage.setItem("result1", variables[0].label)
+sessionStorage.setItem("result2", variables[1].label) 
 
 console.log(variables)
