@@ -635,6 +635,6 @@ sessionStorage.setItem("result2", variables[1].label)
 
 document.getElementById('resultsBtn').addEventListener("click",showResults);
 function showResults(){
-	window.location.replace(resultsUrl + "res1=" + variables[0].label + "res2=" + variables[1].label)
+	window.location.replace(resultsUrl + "?res1=" + variables[0].label + "&res2=" + variables[1].label)
 }
 console.log(variables)
