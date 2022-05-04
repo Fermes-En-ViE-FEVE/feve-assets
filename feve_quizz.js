@@ -583,7 +583,9 @@ questions.forEach(question => {
 		question.answers.forEach(answer => {
 			if (answer.answer === paramsObj[question.label]) {
 				Object.keys(answer.values).forEach(key => {
-					variables.filter(variable => variable.label === key)[0].value += answer.values[key]
+					if (variables.filter(variable => variable.label === key).length > 0) {
+						variables.filter(variable => variable.label === key)[0].value += answer.values[key]
+					}
 				})
 			}
 		})
