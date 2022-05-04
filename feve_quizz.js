@@ -25,7 +25,8 @@ let variables = [
 		"score": 0,
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c98186ef283fea8f4290_caprin.png",
 		"max": 0,
-		"descNodeId": "caprin"
+		"descNodeId": "caprin",
+		"withAnimals": true
 	},
 	{
 		"label": ovinViande,
@@ -34,7 +35,8 @@ let variables = [
 		"score": 0,
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c99387c1ba5ee27ca227_ovin1.png",
 		"max": 0,
-		"descNodeId": "ovin"
+		"descNodeId": "ovin",
+		"withAnimals": true
 	},
 	{
 		"label": bovinViande,
@@ -43,7 +45,8 @@ let variables = [
 		"score": 0,
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/626ffd618e248833308c1942_bovin-viande.png",
 		"max": 0,
-		"descNodeId": "bovinV"
+		"descNodeId": "bovinV",
+		"withAnimals": true
 	},
 	{
 		"label": bovinLait,
@@ -52,7 +55,8 @@ let variables = [
 		"score": 0,
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/626ffcef521e0004ee2b4c32_bovin-lait.png",
 		"max": 0,
-		"descNodeId": "bovinL"
+		"descNodeId": "bovinL",
+		"withAnimals": true
 	},
 	{
 		"label": bovinLaitAvecTransfo,
@@ -61,7 +65,8 @@ let variables = [
 		"score": 0,
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/626fff2c4908f448380bbde8_bovin-fromage.png",
 		"max": 0,
-		"descNodeId": "bovinLT"
+		"descNodeId": "bovinLT",
+		"withAnimals": true
 	},
 	{
 		"label": poulesPondeuses,
@@ -70,7 +75,8 @@ let variables = [
 		"score": 0,
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c9938e34c3767a021b27_poules.png",
 		"max": 0,
-		"descNodeId": "poules"
+		"descNodeId": "poules",
+		"withAnimals": true
 	},
 	{
 		"label": maraichages,
@@ -79,7 +85,8 @@ let variables = [
 		"score": 0,
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c99306893703edebe70a_maraichage.png",
 		"max": 0,
-		"descNodeId": "maraichage"
+		"descNodeId": "maraichage",
+		"withAnimals": false
 	},
 	{
 		"label": paysanBoulanger,
@@ -88,7 +95,8 @@ let variables = [
 		"score": 0,
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c9939ba76f02ddcf12be_paysan-boulanger.png",
 		"max": 0,
-		"descNodeId": "paysanBoulanger"
+		"descNodeId": "paysanBoulanger",
+		"withAnimals": false
 	},
 	{
 		"label": grandesCultures,
@@ -97,7 +105,8 @@ let variables = [
 		"score": 0,
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c99347309d1f695e60c1_grandes-cultures.png",
 		"max": 0,
-		"descNodeId": "grandesCultures"
+		"descNodeId": "grandesCultures",
+		"withAnimals": false
 	},
 ];
 
@@ -566,6 +575,9 @@ let questions = [
 	}
 ]
 
+if (paramsObj['1c'] === 'Non') {
+	variables = variables.filter(variable => !variable.withAnimals)
+}
 questions.forEach(question => {
 	if (paramsObj[question.label]) {
 		question.answers.forEach(answer => {
@@ -614,4 +626,8 @@ document.getElementById('secondResultImg').src = variables[1].image
 
 document.getElementById('firstResultDesc').innerHTML = document.getElementById(variables[0].descNodeId).innerHTML
 document.getElementById('secondResultDesc').innerHTML = document.getElementById(variables[1].descNodeId).innerHTML
+
+sessionStorage.setItem("result1", variables[0].title)
+sessionStorage.setItem("result2", variables[1].title) 
+
 console.log(variables)
