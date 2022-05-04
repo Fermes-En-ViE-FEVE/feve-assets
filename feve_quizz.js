@@ -21,7 +21,7 @@ let variables = [
 	{
 		"label": caprinOvinLaitAvecTransfo,
 		"value": 0,
-		"title": "Caprin/ovin lait avec transformation fromagère",
+		"title": "Caprin ou ovin lait avec transformation fromagère",
 		"score": 0,
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c98186ef283fea8f4290_caprin.png",
 		"max": 0,
@@ -66,7 +66,7 @@ let variables = [
 	{
 		"label": poulesPondeuses,
 		"value": 0,
-		"title": "Poules pondeuses avec poulaillers mobiles",
+		"title": "Poules pondeuses",
 		"score": 0,
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c9938e34c3767a021b27_poules.png",
 		"max": 0,
