@@ -27,7 +27,15 @@ let variables = [
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c98186ef283fea8f4290_caprin.png",
 		"max": 0,
 		"descNodeId": "caprin",
-		"withAnimals": true
+		"withAnimals": true,
+		"categories": {
+			"rythmeDeTravail": 0,
+			"organisation": 0,
+			"temperament": 0,
+			"risqueFinancier": 0,
+			"risqueMeteo": 0,
+			"mecanisation": 0
+		}
 	},
 	{
 		"label": ovinViande,
@@ -37,7 +45,15 @@ let variables = [
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c99387c1ba5ee27ca227_ovin1.png",
 		"max": 0,
 		"descNodeId": "ovin",
-		"withAnimals": true
+		"withAnimals": true,
+		"categories": {
+			"rythmeDeTravail": 0,
+			"organisation": 0,
+			"temperament": 0,
+			"risqueFinancier": 0,
+			"risqueMeteo": 0,
+			"mecanisation": 0
+		}
 	},
 	{
 		"label": bovinViande,
@@ -47,7 +63,15 @@ let variables = [
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/626ffd618e248833308c1942_bovin-viande.png",
 		"max": 0,
 		"descNodeId": "bovinV",
-		"withAnimals": true
+		"withAnimals": true,
+		"categories": {
+			"rythmeDeTravail": 0,
+			"organisation": 0,
+			"temperament": 0,
+			"risqueFinancier": 0,
+			"risqueMeteo": 0,
+			"mecanisation": 0
+		}
 	},
 	{
 		"label": bovinLait,
@@ -57,7 +81,15 @@ let variables = [
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/626ffcef521e0004ee2b4c32_bovin-lait.png",
 		"max": 0,
 		"descNodeId": "bovinL",
-		"withAnimals": true
+		"withAnimals": true,
+		"categories": {
+			"rythmeDeTravail": 0,
+			"organisation": 0,
+			"temperament": 0,
+			"risqueFinancier": 0,
+			"risqueMeteo": 0,
+			"mecanisation": 0
+		}
 	},
 	{
 		"label": bovinLaitAvecTransfo,
@@ -67,7 +99,15 @@ let variables = [
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/626fff2c4908f448380bbde8_bovin-fromage.png",
 		"max": 0,
 		"descNodeId": "bovinLT",
-		"withAnimals": true
+		"withAnimals": true,
+		"categories": {
+			"rythmeDeTravail": 0,
+			"organisation": 0,
+			"temperament": 0,
+			"risqueFinancier": 0,
+			"risqueMeteo": 0,
+			"mecanisation": 0
+		}
 	},
 	{
 		"label": poulesPondeuses,
@@ -77,7 +117,15 @@ let variables = [
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c9938e34c3767a021b27_poules.png",
 		"max": 0,
 		"descNodeId": "poules",
-		"withAnimals": true
+		"withAnimals": true,
+		"categories": {
+			"rythmeDeTravail": 0,
+			"organisation": 0,
+			"temperament": 0,
+			"risqueFinancier": 0,
+			"risqueMeteo": 0,
+			"mecanisation": 0
+		}
 	},
 	{
 		"label": maraichages,
@@ -87,7 +135,15 @@ let variables = [
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c99306893703edebe70a_maraichage.png",
 		"max": 0,
 		"descNodeId": "maraichage",
-		"withAnimals": false
+		"withAnimals": false,
+		"categories": {
+			"rythmeDeTravail": 0,
+			"organisation": 0,
+			"temperament": 0,
+			"risqueFinancier": 0,
+			"risqueMeteo": 0,
+			"mecanisation": 0
+		}
 	},
 	{
 		"label": paysanBoulanger,
@@ -97,7 +153,15 @@ let variables = [
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c9939ba76f02ddcf12be_paysan-boulanger.png",
 		"max": 0,
 		"descNodeId": "paysanBoulanger",
-		"withAnimals": false
+		"withAnimals": false,
+		"categories": {
+			"rythmeDeTravail": 0,
+			"organisation": 0,
+			"temperament": 0,
+			"risqueFinancier": 0,
+			"risqueMeteo": 0,
+			"mecanisation": 0
+		}
 	},
 	{
 		"label": grandesCultures,
@@ -107,13 +171,22 @@ let variables = [
 		"image": "https://uploads-ssl.webflow.com/6165418020920d00613318c8/6262c99347309d1f695e60c1_grandes-cultures.png",
 		"max": 0,
 		"descNodeId": "grandesCultures",
-		"withAnimals": false
+		"withAnimals": false,
+		"categories": {
+			"rythmeDeTravail": 0,
+			"organisation": 0,
+			"temperament": 0,
+			"risqueFinancier": 0,
+			"risqueMeteo": 0,
+			"mecanisation": 0
+		}
 	},
 ];
 
 let questions = [
 	{
 		"label": '1',
+		"category": "rythmeDeTravail",
 		"answers": [
 			{
 				"answer": 'Oui',
@@ -147,6 +220,7 @@ let questions = [
 	},
 	{
 		"label": '2',
+		"category": "rythmeDeTravail",
 		"answers": [
 			{
 				"answer": 'Oui',
@@ -180,6 +254,7 @@ let questions = [
 	},
 	{
 		"label": '3',
+		"category": "organisation",
 		"answers": [
 			{
 				"answer": 'Oui',
@@ -213,6 +288,7 @@ let questions = [
 	},
 	{
 		"label": '4',
+		"category": "organisation",
 		"answers": [
 			{
 				"answer": 'Oui',
@@ -246,6 +322,7 @@ let questions = [
 	},
 	{
 		"label": '5',
+		"category": "organisation",
 		"answers": [
 			{
 				"answer": 'Oui',
@@ -279,6 +356,7 @@ let questions = [
 	},
 	{
 		"label": '6',
+		"category": "temperament",
 		"answers": [
 			{
 				"answer": 'Oui',
@@ -312,6 +390,7 @@ let questions = [
 	},
 	{
 		"label": '7',
+		"category": "mecanisation",
 		"answers": [
 			{
 				"answer": 'Oui',
@@ -345,6 +424,7 @@ let questions = [
 	},
 	{
 		"label": '8',
+		"category": "mecanisation",
 		"answers": [
 			{
 				"answer": 'Oui',
@@ -378,6 +458,7 @@ let questions = [
 	},
 	{
 		"label": '9',
+		"category": "temperament",
 		"answers": [
 			{
 				"answer": 'Oui',
@@ -411,6 +492,7 @@ let questions = [
 	},
 	{
 		"label": '10',
+		"category": "temperament",
 		"answers": [
 			{
 				"answer": 'Oui',
@@ -444,6 +526,7 @@ let questions = [
 	},
 	{
 		"label": '11',
+		"category": "temperament",
 		"answers": [
 			{
 				"answer": 'Oui',
@@ -477,6 +560,7 @@ let questions = [
 	},
 	{
 		"label": '12',
+		"category": "risqueFinancier",
 		"answers": [
 			{
 				"answer": 'Oui',
@@ -510,6 +594,7 @@ let questions = [
 	},
 	{
 		"label": '13',
+		"category": "risqueFinancier",
 		"answers": [
 			{
 				"answer": 'Oui',
@@ -543,6 +628,7 @@ let questions = [
 	},
 	{
 		"label": '14',
+		"category": "risqueMeteo",
 		"answers": [
 			{
 				"answer": 'Oui',
@@ -586,6 +672,7 @@ questions.forEach(question => {
 				Object.keys(answer.values).forEach(key => {
 					if (variables.filter(variable => variable.label === key).length > 0) {
 						variables.filter(variable => variable.label === key)[0].value += answer.values[key]
+						variables.filter(variable => variable.label === key)[0].categories[question.category] += answer.values[key]
 					}
 				})
 			}
@@ -607,6 +694,16 @@ variables.forEach(variable => {
 })
 variables.forEach(variable => {
 	variable.score = Math.ceil(((variable.value / variable.max) * 100))
+	Object.keys(variable.categories).forEach(key => {
+		let max = questions.filter(question => question.category === key).length * 100
+		if (key === 'organisation') {
+			max = 275;
+		}
+		if (key === 'temperament') {
+			max = 375;
+		}
+		variable.categories[key] = Math.ceil(((variable.categories[key] / max) * 100))
+	})
 })
 variables = variables.sort((a, b) => {
   if (parseFloat(b.score) < parseFloat(a.score)) {
@@ -617,7 +714,6 @@ variables = variables.sort((a, b) => {
   }
   return 0;
 });
-
 
 document.getElementById('firstResultTitle').textContent = variables[0].title
 document.getElementById('firstResultScore').textContent = variables[0].score
@@ -631,7 +727,9 @@ document.getElementById('firstResultDesc').innerHTML = document.getElementById(v
 document.getElementById('secondResultDesc').innerHTML = document.getElementById(variables[1].descNodeId).innerHTML
 
 sessionStorage.setItem("result1", variables[0].label)
+sessionStorage.setItem("result1Categories", variables[0].categories)
 sessionStorage.setItem("result2", variables[1].label) 
+sessionStorage.setItem("result2Categories", variables[1].categories) 
 
 document.getElementById('resultsBtn').addEventListener("click",showResults);
 function showResults(){
