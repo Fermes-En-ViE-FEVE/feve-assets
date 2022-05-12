@@ -727,9 +727,9 @@ document.getElementById('firstResultDesc').innerHTML = document.getElementById(v
 document.getElementById('secondResultDesc').innerHTML = document.getElementById(variables[1].descNodeId).innerHTML
 
 sessionStorage.setItem("result1", variables[0].label)
-sessionStorage.setItem("result1Categories", variables[0].categories)
+sessionStorage.setItem("result1Categories", JSON.stringify(variables[0].categories))
 sessionStorage.setItem("result2", variables[1].label) 
-sessionStorage.setItem("result2Categories", variables[1].categories) 
+sessionStorage.setItem("result2Categories", JSON.stringify(variables[1].categories)) 
 
 document.getElementById('resultsBtn').addEventListener("click",showResults);
 function showResults(){
