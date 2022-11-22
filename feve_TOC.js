@@ -11,6 +11,7 @@ document.getElementById("content").querySelectorAll(TocField).forEach(function(h
   
   item.setAttribute("onclick", "scrollTarget(\'" + heading.id + "\')");
   document.querySelector("#toc").appendChild(item); // places each item inside the Table of Contents div
+  document.querySelector('.toc-multiple').appendChild(item);
 });
 
 function scrollTarget(tgt) { 
