@@ -55,3 +55,8 @@
   cursor: pointer;
   font-size: 1.2rem;
 }
+
+#date_sessions {
+  display: flex;
+  flex-direction: column;
+}
