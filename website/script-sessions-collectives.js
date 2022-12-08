@@ -74,7 +74,7 @@
 				i+=1;
 			}
 			//ajouter une option "aucune date de ne convient" après les dates disponibles
-			html = html + ("<div class='date_session' id='aucune_date' onclick='updateDate(this)'> Aucune date ne me convient, tenez-moi au courant des prochaines sessions.");	
+			html = html + ("<div class='date_session' id='aucune_date' onclick='updateDate(this)'><div>Aucune date ne me convient</div> <div>tenez-moi au courant des prochaines sessions.</div></div>"");	
 			div_sessions.innerHTML = html;
 
 			
