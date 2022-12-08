@@ -66,6 +66,7 @@
 						
 			
 			var div_sessions = document.getElementById('date_sessions');
+			console.log(div_sessions)
 			var html = '';
 			var i=0;
 			for (event in list_events) {
