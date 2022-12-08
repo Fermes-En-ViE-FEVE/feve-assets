@@ -35,7 +35,7 @@
 	//fonction pour afficher en couleur la date selectionnée
 	var lastDiv = null;
 	function chgColor(currentDiv){
-		document.getElementById(currentDiv).style.backgroundColor='#e4b440';
+		document.getElementById(currentDiv).style.backgroundColor='#ffeb83';
 		if (lastDiv!=null){
 		document.getElementById(lastDiv).style.backgroundColor='transparent';
 		}
