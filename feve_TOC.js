@@ -15,7 +15,7 @@ document.getElementById("content").querySelectorAll(TocField).forEach(function(h
     if (x === 'h2') {
       tocMultiple.appendChild(item.cloneNode(true)
     }
-  }));
+  });
 });
 
 function scrollTarget(tgt) { 
