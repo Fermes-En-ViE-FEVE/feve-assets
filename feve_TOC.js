@@ -13,7 +13,7 @@ document.getElementById("content").querySelectorAll(TocField).forEach(function(h
   document.querySelector("#toc").appendChild(item); // places each item inside the Table of Contents div
   document.querySelectorAll('.toc-multiple').forEach(tocMultiple => {
     if (x === 'h2') {
-      tocMultiple.appendChild(item.cloneNode(true)
+      tocMultiple.appendChild(item.cloneNode(true))
     }
   });
 });
