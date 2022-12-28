@@ -12,7 +12,7 @@ document.getElementById("content").querySelectorAll(TocField).forEach(function(h
   item.setAttribute("onclick", "scrollTarget(\'" + heading.id + "\')");
   document.querySelector("#toc").appendChild(item); // places each item inside the Table of Contents div
   document.querySelectorAll('.toc-multiple').forEach(tocMultiple => {
-    if (x === 'h2') {
+    if (item.classList.contains('toc-h2')) {
       tocMultiple.appendChild(item.cloneNode(true))
     }
   });
