@@ -3,7 +3,7 @@ document.getElementById("content").querySelectorAll(TocField).forEach(function(h
   heading.classList.add("content-h");
   const item = document.createElement("a"); // creates an anchor element called "item" for each heading
   item.innerHTML = heading.innerHTML; // gives each item the text of the corresponding heading
-  (TocField).split(",").replace(/\s/g, '').forEach(function(x) { // runs a function for each item in your headings list
+  (TocField).replace(/\s/g, '').split(",").forEach(function(x) { // runs a function for each item in your headings list
     if (heading.tagName.toLowerCase()==x) {
       item.classList.add("tocitem", "toc-" + x); // gives each item the correct class
     }
