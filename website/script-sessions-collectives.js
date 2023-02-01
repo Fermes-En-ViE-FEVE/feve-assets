@@ -17,7 +17,7 @@ function updateChosenDateInForm(dateNode) {
 	const dateRegex = /^\d{2}/;
 	let formattedDate = ""
 	if (dateRegex.test(dateToParse)) {
-		formattedDate = targetDate.substr(6,4) + "-" + targetDate.substr(3,2) + "-" + targetDate.substr(0,2);
+		formattedDate = dateToParse.substr(6,4) + "-" + dateToParse.substr(3,2) + "-" + dateToParse.substr(0,2);
 	}
 	document.getElementsByName('date_de_la_session_collective')[0].value = formattedDate;
 	updateSessionNodeColor(dateNode.id);
