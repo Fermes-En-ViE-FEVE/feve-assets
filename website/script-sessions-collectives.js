@@ -60,7 +60,7 @@ function getEventsInTable(audience) {
 			i+=1;
 		}
 		//ajouter une option "aucune date de ne convient" après les dates disponibles
-		html += ("<div class'text-center' id='aucune_date' onclick='updateChosenDateInForm(this)'><div class='no_date_suits'>Aucune date ne me convient</div> <div class='date_session'>Tenez-moi au courant des prochaines sessions</div></div>");	
+		html += ("<div class'text-center' id='aucune_date'><div class='no_date_suits'>Aucune date ne me convient</div> <div class='date_session' onclick='updateChosenDateInForm(this)'>Tenez-moi au courant des prochaines sessions</div></div>");	
 		sessionsNode.innerHTML = html;
 	})
 	.catch(error => console.error(error));
