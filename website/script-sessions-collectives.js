@@ -39,9 +39,9 @@ const api_token = 'key8YSvDWQq4oU4jO'; //clef api avec lecture seule sur la base
 let listEvents = [];
 function getEventsInTable(audience) {
 	return axios.get(
-"https://api.airtable.com/v0/"+ base_airtable +"/events?sort%5B0%5D%5Bfield%5D=Date2&sort%5B0%5D%5Bdirection%5D=asc&view=Grid%20view",
-{ headers: { Authorization: "Bearer " + api_token }}
-)
+    "https://api.airtable.com/v0/"+ base_airtable +"/events?sort%5B0%5D%5Bfield%5D=Date2&sort%5B0%5D%5Bdirection%5D=asc&view=Grid%20view",
+    { headers: { Authorization: "Bearer " + api_token }}
+    )
 	.then(response => {
 		const records = response.data.records;
 		for (record in records) {
@@ -52,8 +52,8 @@ function getEventsInTable(audience) {
 			}
 		}
 
-		const div_sessions = document.getElementById('date_sessions');
-		console.log(div_sessions)
+		const sessionsNode = document.getElementById('date_sessions');
+		console.log(sessionsNode)
 		let html = '';
 		let i=0;
 		for (event in listEvents) {
@@ -62,7 +62,7 @@ function getEventsInTable(audience) {
 		}
 		//ajouter une option "aucune date de ne convient" après les dates disponibles
 		html += ("<div class'text-center' id='aucune_date' onclick='updateChosenDateInForm(this)'><div class='no_date_suits'>Aucune date ne me convient</div> <div class='notif_next_sessions'>Tenez-moi au courant des prochaines sessions</div></div>");	
-		div_sessions.innerHTML = html;
+		sessionsNode.innerHTML = html;
 	})
 	.catch(error => console.error(error));
 }
