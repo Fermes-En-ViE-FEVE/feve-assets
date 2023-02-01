@@ -38,7 +38,7 @@
 		if (currentDiv === "aucune_date") return
 		document.getElementById(currentDiv).style.backgroundColor='#ffeb83';
 		if (lastDiv!=null){
-		document.getElementById(lastDiv).style.backgroundColor='transparent';
+		document.getElementById(lastDiv).style.backgroundColor='#edebe7';
 		}
 		lastDiv = currentDiv;
 		}
