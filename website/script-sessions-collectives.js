@@ -37,7 +37,7 @@ function updateSessionNodeColor(currentSessionNodeId) {
 const base_airtable = 'appuuEE6Jc2DV0GO5'; //id de la base Airtable à utiliser
 const api_token = 'key8YSvDWQq4oU4jO'; //clef api avec lecture seule sur la base (compte de Sonic)
 let listEvents = [];
-function getEventsInTable(audience){
+function getEventsInTable(audience) {
 	return axios.get(
 "https://api.airtable.com/v0/"+ base_airtable +"/events?sort%5B0%5D%5Bfield%5D=Date2&sort%5B0%5D%5Bdirection%5D=asc&view=Grid%20view",
 { headers: { Authorization: "Bearer " + api_token }}
