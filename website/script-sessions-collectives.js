@@ -24,7 +24,6 @@ function updateChosenDateInForm(dateNode) {
 }
 
 function updateSessionNodeColor(currentSessionNodeId) {
-	if (currentSessionNodeId === "aucune_date") return
 	document.getElementById(currentSessionNodeId).style.backgroundColor='#ffeb83';
 	if (lastSessionNodeId !== null) {
 		document.getElementById(lastSessionNodeId).style.backgroundColor='#edebe7';
