@@ -20,6 +20,6 @@ document.getElementById("content").querySelectorAll(TocField).forEach(function(h
 
 function scrollTarget(tgt) { 
 var target = document.getElementById(tgt);
-var negoffset = window.innerHeight/2;
+var negoffset = window.innerHeight/6;
 window.scrollTo({top: (target.offsetTop + negoffset), behavior: "smooth"})
 };
