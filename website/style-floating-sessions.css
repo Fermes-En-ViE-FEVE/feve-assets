@@ -10,6 +10,12 @@
   border-radius: 4px;
   cursor: pointer;
 }
+@media (max-width: 500px) { 
+  #floating-sessions-action-button {
+      right: 50%;
+      transform: translateY(50%);
+  }
+}
 
 .modal {
   position: fixed;
