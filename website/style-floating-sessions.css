@@ -15,6 +15,9 @@
   #floating-sessions-action-button {
       right: 50%;
       transform: translateX(50%);
+    display: inline-block;
+white-space: nowrap;
+      font-size: 18px;
   }
 }
 
