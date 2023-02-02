@@ -14,7 +14,7 @@
 @media (max-width: 500px) { 
   #floating-sessions-action-button {
       right: 50%;
-      transform: translateY(50%);
+      transform: translateX(50%);
   }
 }
 
