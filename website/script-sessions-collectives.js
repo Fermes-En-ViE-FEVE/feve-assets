@@ -65,3 +65,9 @@ function getEventsInTable(audience) {
 	})
 	.catch(error => console.error(error));
 }
+
+    window.addEventListener('message', function(event) {
+        if (event.data.type === 'hsFormCallback' && event.data.eventName === 'onFormSubmit') {
+		document.getElementById('date_sessions').style.display = "none"
+        }
+    });
