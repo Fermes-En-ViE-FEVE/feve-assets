@@ -1,3 +1,4 @@
+if (TocField !== '') {
 document.getElementById("content").querySelectorAll(TocField).forEach(function(heading, i) { // runs a function for all headings inside your rich text element
   heading.setAttribute("id", "toc-" + i); // gives each heading a unique id
   heading.classList.add("content-h");
@@ -17,6 +18,7 @@ document.getElementById("content").querySelectorAll(TocField).forEach(function(h
     }
   });
 });
+}
 
 function scrollTarget(tgt) { 
 var target = document.getElementById(tgt);
