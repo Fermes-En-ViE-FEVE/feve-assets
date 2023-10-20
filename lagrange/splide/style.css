@@ -15,3 +15,22 @@
 .splide__arrow {
     top: 100% !important;
 }
+#slider-back {
+    background-color: #f3f3f3;
+    margin-right: 10px;
+}
+#slider-next {
+    margin-left: 10px;
+}
+.slider-nav-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    z-index: 30;
+    position: relative;
+}
+#slider-back,
+#slider-next,
+#slider-last-next {
+    display: none;
+}
