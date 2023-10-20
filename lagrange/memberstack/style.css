@@ -1,0 +1,14 @@
+/* style the Memberstack error message box at the bottom of the screen */
+#ms-error-message-box {
+    background-color:#fff!important;
+    color:red;
+    font-weight:normal;
+    font-size:1em;
+    border-radius:5px;
+    border:solid 1px red;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.ms-error-message {
+    /*position:static!important;*/
+}
