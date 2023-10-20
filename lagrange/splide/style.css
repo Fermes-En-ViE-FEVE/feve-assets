@@ -1,0 +1,17 @@
+.splide__pagination {
+    bottom: -3rem !important;
+}
+
+.splide__pagination__page.is-active {
+    background: #ffeb83 !important;
+}
+.splide__pagination li {
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+}
+.splide__arrow:disabled {
+    display: none;
+}
+.splide__arrow {
+    top: 100% !important;
+}
