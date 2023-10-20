@@ -1,0 +1,15 @@
+.modal__content {
+    margin-bottom:0!important;
+}
+
+.modal__close {
+    background: transparent;
+    border: 0;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.modal__header .modal__close:before {
+    content: "\2715";
+}
