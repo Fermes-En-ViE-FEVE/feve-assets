@@ -41,3 +41,8 @@ select{
     background-repeat: no-repeat !important;
     background-color: #ffffff !important;
 }
+.reduce-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
