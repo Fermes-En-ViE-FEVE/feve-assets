@@ -129,3 +129,4 @@
     text-align: end;
     margin-top: 0.75rem;
 }
+@media (min-width: 1250px) { .hs-form-iframe { width: 700px !important; } }
