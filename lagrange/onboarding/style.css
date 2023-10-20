@@ -34,9 +34,19 @@
 }
 .onboarding-slide-illu {
     margin-top: 2.25rem;
-    /* width: 150px; */
 }
 .onboarding-slide-img-last {
     width: 130px;
     margin-top: 2rem;
+}
+.onboarding-btn-primary {
+    background: #ffeb83;
+    border-radius: 6px;
+    padding: 9px 1.5rem;
+    display: inline-block;
+    outline: none;
+    border: none;
+}
+.onboarding-btn-primary:hover {
+    cursor: pointer;
 }
