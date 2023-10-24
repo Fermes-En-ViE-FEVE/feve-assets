@@ -7,6 +7,7 @@ MemberStack.onReady.then(member => {
             }
         })
         const closeBtn = document.querySelector('.button-primary.w-button[data-micromodal-close]');
+        console.log(closeBtn)
         closeBtn.addEventListener('click', (e) => {
             localStorage.setItem(toolModal.getAttribute('tool-name'), 'true')
             MicroModal.close('tool-presentation-modal')
