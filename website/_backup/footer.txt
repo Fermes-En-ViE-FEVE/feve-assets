@@ -1,0 +1,67 @@
+<div class="modal micromodal-slide" id="elevage-2023" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-onboarding-title">
+      <main class="modal__content" id="modal-onboarding-content" style="text-align:center;margin-bottom:0 !important;">
+        <h6 class="onboarding-slide-title" style="margin-bottom: 2rem;">🌱 FEVE finance votre ferme 🌱</h6>
+        <p style="max-width: 500px;
+margin: auto;
+  margin-bottom: auto;
+margin-bottom: 1rem;">À l'occasion du Sommet de l'Élevage 2023,
+FEVE lance un appel à projets pour financer 5 nouvelles fermes !</p>
+<ul style="max-width: 500px;
+margin: auto;
+text-align: left;
+margin-bottom: 2rem;list-style-type:none;">
+<li style="font-size: 16px;">✅ Avoir trouvé une ferme où s'installer (30 ha ou plus)</li>
+<li style="font-size: 16px;">✅ Avoir un projet agroécologique et nourricier</li>
+  <li style="font-size: 16px;">✅ Avoir au moins 1 an d’expérience dans l'agriculture
+</li>
+  <li style="font-size: 16px;">✅ Avoir la capacité agricole
+</li>
+  <li style="font-size: 16px;">✅ Avoir un apport financier initial (2,5% du montant total)
+</li>
+</ul>
+<a target="_blank" href="https://page.feve.co/fr/appel-a-projets-0" class="onboarding-btn-primary button-primary" id="elevage-cta" style="margin-right: .5rem;">Je tente ma chance !</a>
+<button class="onboarding-btn-secondary" data-micromodal-close aria-label="Close this dialog window" style="  border-radius: 6px;
+  padding: 9px 1.5rem;
+  font-weight: bold;
+">Non merci</button>
+      </main>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBPXPD7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7616802.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
+<script src="https://fermes-en-vie-feve.github.io/feve-assets/website/global/elevageModal.js">
+</script>
+<script src="https://fermes-en-vie-feve.github.io/feve-assets/website/global/mySpace.js">
+</script>
+<script src="https://fermes-en-vie-feve.github.io/feve-assets/website/global/feveMetrics.js">
+</script>
+<script src="https://fermes-en-vie-feve.github.io/feve-assets/website/global/guideModal.js">
+</script>
+
+<script>
+window.axeptioSettings = {
+  clientId: "63c67059909d550dcf894303",
+  cookiesVersion: "site web feve-fr",
+};
+ 
+(function(d, s) {
+  var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+  e.async = true; e.src = "//static.axept.io/sdk.js";
+  t.parentNode.insertBefore(e, t);
+})(document, "script");
+</script>
