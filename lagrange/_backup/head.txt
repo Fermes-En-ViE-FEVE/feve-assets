@@ -5,23 +5,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5QSF75TL');
 </script>
-<link rel="stylesheet" href="https://fermes-en-vie-feve.github.io/feve_js/lagrange/global/style.css">
-<link rel="stylesheet" href="https://fermes-en-vie-feve.github.io/feve_js/lagrange/micromodal/style.css">
-<link rel="stylesheet" href="https://fermes-en-vie-feve.github.io/feve_js/lagrange/memberstack/style.css">
-<link rel="stylesheet" href="https://fermes-en-vie-feve.github.io/feve_js/lagrange/hubspot/style.css">
-<link rel="stylesheet" href="https://fermes-en-vie-feve.github.io/feve_js/lagrange/session-collectives/style.css">
-<link rel="stylesheet" href="https://fermes-en-vie-feve.github.io/feve_js/lagrange/uploadcare/style.css">
-<link rel="stylesheet" href="https://fermes-en-vie-feve.github.io/feve_js/lagrange/nps/style.css">
-<link rel="stylesheet" href="https://fermes-en-vie-feve.github.io/feve_js/lagrange/onboarding/style.css">
+<link rel="stylesheet" href="https://fermes-en-vie-feve.github.io/feve-assets/lagrange/global/style.css">
+<link rel="stylesheet" href="https://fermes-en-vie-feve.github.io/feve-assets/lagrange/micromodal/style.css">
+<link rel="stylesheet" href="https://fermes-en-vie-feve.github.io/feve-assets/lagrange/memberstack/style.css">
+<link rel="stylesheet" href="https://fermes-en-vie-feve.github.io/feve-assets/lagrange/hubspot/style.css">
+<link rel="stylesheet" href="https://fermes-en-vie-feve.github.io/feve-assets/lagrange/session-collectives/style.css">
+<link rel="stylesheet" href="https://fermes-en-vie-feve.github.io/feve-assets/lagrange/uploadcare/style.css">
+<link rel="stylesheet" href="https://fermes-en-vie-feve.github.io/feve-assets/lagrange/nps/style.css">
+<link rel="stylesheet" href="https://fermes-en-vie-feve.github.io/feve-assets/lagrange/onboarding/style.css">
 
 <!--Light slider librarie -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
 <!--Light slider librarie -->
 
-<script src="https://fermes-en-vie-feve.github.io/feve_js/lagrange/global/head.js"></script>
+<script src="https://fermes-en-vie-feve.github.io/feve-assets/lagrange/global/head.js"></script>
 
  <!-- Traduction FEVE Memberstack + infos ms -->
-<script src="https://fermes-en-vie-feve.github.io/feve_js/lagrange/memberstack/traduction.js"> </script>
+<script src="https://fermes-en-vie-feve.github.io/feve-assets/lagrange/memberstack/traduction.js"> </script>
  <!-- Memberstack -->
 <script src="https://api.memberstack.io/static/memberstack.js?webflow" data-memberstack-id="c6ddac74330f695659d8b6bb1a368d90"> </script>
 
