@@ -634,4 +634,9 @@ select{
 #slider-last-next {
     display: none;
 }
+.hs-field-desc {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: .3rem;
+}
 /* MAIN MODAL */
