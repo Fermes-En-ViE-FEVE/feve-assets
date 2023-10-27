@@ -20,7 +20,11 @@ const sessionsCollectivesButtons = document.querySelectorAll('.sessions-collecti
     MicroModal.show('sessions-collectives-modal');
   })
 })
-function show_Form() {document.getElementById('form').style.display='block';}
+function showFloatingSessionsCollectivesForm() {
+  document.getElementById('floating-form').style.display='block';
+
+}
 if (document.querySelector('#sessions-collectives-modal')) {
-  getEventsInTable('Investisseur');document.getElementById('date_sessions').onclick=show_Form;
+  getEventsInTable('Investisseur');
+  document.getElementById('date_sessions').onclick=showFloatingSessionsCollectivesForm;
 }
