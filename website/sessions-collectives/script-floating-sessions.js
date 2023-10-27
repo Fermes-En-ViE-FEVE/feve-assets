@@ -14,3 +14,9 @@ modals.forEach(function (trigger) {
     });
   });
 });
+
+const sessionsCollectivesButtons = document.querySelectorAll('.sessions-collectives-modal-trigger').forEach((button) => {
+  button.addEventListener('click', (e) => {
+    MicroModal.show('sessions-collectives-modal');
+  })
+})
