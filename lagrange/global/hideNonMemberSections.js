@@ -1,5 +1,5 @@
 MemberStack.onReady.then(member => {
-    if (member.loggedIn && !['', '/'].includes(window.location.pathname)) {
+    if (member.loggedIn && !['', '/', '/fermes'].includes(window.location.pathname)) {
         const nav = document.querySelector('.navigation.w-nav')
         if (nav) {
             nav.style.display = 'none'
