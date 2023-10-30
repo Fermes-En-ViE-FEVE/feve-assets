@@ -278,6 +278,10 @@ select{
         min-height: 38px !important;
         height: auto !important;
     }}
+
+.reagan--widget-loaded {
+    display: none;
+}
 /* HUBSPOT */
 
 
