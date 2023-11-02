@@ -8,6 +8,9 @@ MemberStack.onReady.then(member => {
                 member.updateProfile({onboardingModal: "true"}, false)
             }
         });
+        document.querySelector('#slider-last-next').addEventListener('click', (e) => {
+            member.updateProfile({onboardingModal: "true"}, false)
+        })
         const splide = new Splide('.splide', {
             arrows: false,
         });
