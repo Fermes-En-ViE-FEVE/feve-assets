@@ -1,5 +1,5 @@
-document.querySelectorAll('.espace-modal-trigger').forEach((button) => {
+document.querySelectorAll('.mon-espace-trigger').forEach((button) => {
     button.addEventListener('click', (e) => {
-        MicroModal.show('espace-modal');
+        MicroModal.show('mon-espace');
     })
 })
