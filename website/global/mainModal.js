@@ -1,9 +1,17 @@
-// const mainModal = document.querySelector('#main-modal')
-// if (mainModal && !localStorage.getItem('millions') && !document.location.pathname.includes('photos-fermes')) {
-//     MicroModal.show('main-modal', {
-//         onClose: (modal) => {
-//             localStorage.setItem('millions', 'true')
-//         }
-//     })
-//     document.querySelector('#main-modal-cta').addEventListener('click', (e) => MicroModal.close('main-modal'))
-// }
+const mainModal = document.querySelector('#main-modal')
+if (mainModal && !localStorage.getItem('millions') && !document.location.pathname.includes('photos-fermes')) {
+    if (
+        window.location.href.includes('investir') ||
+        window.location.href.includes('offrir-des-actions') ||
+        window.location.href.includes('cadeau') ||
+        window.location.href.includes('ressources-invest')
+
+    ) {
+        MicroModal.show('main-modal', {
+            onClose: (modal) => {
+                localStorage.setItem('millions', 'true')
+            }
+        })
+        document.querySelector('#main-modal-cta').addEventListener('click', (e) => MicroModal.close('main-modal'))
+    }
+}
