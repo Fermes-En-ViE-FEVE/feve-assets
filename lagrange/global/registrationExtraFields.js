@@ -4,9 +4,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         const fieldGft = document.getElementById("code-invitation");
         if (fieldGft) { fieldGft.value = gft; }
     }
+    if (localStorage.getItem("src_ref")){
+        const source = localStorage.getItem("src_ref");
+        const fieldSrcRef = document.getElementById("src_ref");
+        if (fieldSrcRef) { fieldSrcRef.value = source; }
+    }
 });
-/*const urlSearch = new URLSearchParams(window.location.search);
-if (urlSearch.has('gft')) {
-  const gft = urlSearch.get('gft');
-  localStorage.setItem('gft', gft);
-} */
