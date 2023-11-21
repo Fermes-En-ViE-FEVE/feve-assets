@@ -1,5 +1,5 @@
 if (
-    !localStorage.getItem('grange_entry_page') &&
+    !sessionStorage.getItem('grange_entry_page') &&
     !window.location.pathname.includes('/connexion') &&
     !window.location.pathname.includes('/inscription') &&
     !window.location.pathname.includes('onboarding') &&
