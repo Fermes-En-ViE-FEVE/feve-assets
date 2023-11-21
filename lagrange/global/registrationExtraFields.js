@@ -9,4 +9,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
         const fieldSrcRef = document.getElementById("src_ref");
         if (fieldSrcRef) { fieldSrcRef.value = source; }
     }
+    if (localStorage.getItem("grange_entry_page")){
+        const source = localStorage.getItem("grange_entry_page");
+        const fieldEntryPage = document.getElementById("entrypage");
+        if (fieldEntryPage) { fieldEntryPage.value = source; }
+    }
+    if (localStorage.getItem("grange_current_url")){
+        const source = localStorage.getItem("grange_current_url");
+        const fieldSignupPage = document.getElementById("signuppage");
+        if (fieldSignupPage) { fieldSignupPage.value = source; }
+    }
 });
