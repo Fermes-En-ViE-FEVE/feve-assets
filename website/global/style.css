@@ -27,6 +27,8 @@ a.button-primary, .bg-primary a {
 .button:hover {
     cursor: pointer;
 }
+
+
 .w-embed .button-primary {
     display: inline-block;
 }
@@ -647,3 +649,8 @@ select{
     margin-bottom: .3rem;
 }
 /* MAIN MODAL */
+
+
+.section-primary .article-author {
+    color: white;
+}
