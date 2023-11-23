@@ -650,6 +650,6 @@ select{
 }
 /* MAIN MODAL */
 
-.article-author {
-    text-decoration: none;
+.section[theme="Bleu"] .article-author {
+    color: white !important;
 }
