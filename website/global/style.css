@@ -651,6 +651,6 @@ select{
 /* MAIN MODAL */
 
 
-.section-primary .article-author {
+.section-primary .article-author, .section-primary .line-separator {
     color: white;
 }
