@@ -650,3 +650,6 @@ select{
 }
 /* MAIN MODAL */
 
+.article-author {
+    text-decoration: none;
+}
