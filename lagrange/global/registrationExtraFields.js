@@ -1,16 +1,16 @@
-window.addEventListener('DOMContentLoaded', (event) => {
+onwindow.addEventListener('DOMContentLoaded', (event) => {
     if (localStorage.getItem("gft")){
         const gft = localStorage.getItem("gft");
         const fieldGft = document.getElementById("code-invitation");
         if (fieldGft) { fieldGft.value = gft; }
     }
-    if (localStorage.getItem("src_ref")){
-        const source = localStorage.getItem("src_ref");
+    if (sessionStorage.getItem("src_ref")){
+        const source = sessionStorage.getItem("src_ref");
         const fieldSrcRef = document.getElementById("src_ref");
         if (fieldSrcRef) { fieldSrcRef.value = source; }
     }
-    if (sessionStorage.getItem("grange_entry_page")){
-        const source = sessionStorage.getItem("grange_entry_page");
+    if (localStorage.getItem("grange_entry_page")){
+        const source = localStorage.getItem("grange_entry_page");
         const fieldEntryPage = document.getElementById("entrypage");
         if (fieldEntryPage) { fieldEntryPage.value = source; }
     }
