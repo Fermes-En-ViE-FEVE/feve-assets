@@ -1,5 +1,5 @@
 if (
-    !sessionStorage.getItem('grange_entry_page') &&
+    !localStorage.getItem('grange_entry_page') &&
     !window.location.pathname.includes('/connexion') &&
     !window.location.pathname.includes('/inscription') &&
     !window.location.pathname.includes('onboarding') &&
@@ -7,6 +7,6 @@ if (
     window.location.pathname !== '/' &&
     window.location.pathname !== ''
 ) {
-    sessionStorage.setItem('grange_entry_page', window.location.href)
+    localStorage.setItem('grange_entry_page', window.location.href)
     console.log('grange_entry_page', window.location.href)
 }
