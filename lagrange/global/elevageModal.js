@@ -6,6 +6,6 @@ MemberStack.onReady.then(member => {
                 localStorage.setItem('enquete-femme-agriculture', 'true')
             }
         })
-        document.querySelector('#elevage-cta').addEventListener('click', (e) => MicroModal.close('elevage-2023'))
+        document.querySelector('#elevage-cta').addEventListener('click', (e) => MicroModal.close('enquete-femme-agriculture'))
     }
 })
