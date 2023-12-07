@@ -32,3 +32,12 @@
         display: none;
     }
 }
+.flipdown.flipdown__theme-dark .rotor-bottom, .flipdown.flipdown__theme-dark .rotor-leaf-rear {
+    background: #004757;
+}
+.flipdown.flipdown__theme-dark .rotor, .flipdown.flipdown__theme-dark .rotor-top, .flipdown.flipdown__theme-dark .rotor-leaf-front {
+    background: #004757;
+}
+.flipdown.flipdown__theme-dark .rotor-group-heading::before {
+    color: #004757;
+}
