@@ -1,0 +1,33 @@
+.bandeau-invest-noel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+.bandeau-invest-noel-title {
+    font-size: 20px;
+}
+.bandeau-invest-noel-subtitle {
+    font-size: 17px;
+}
+.flipdown {
+    scale: .5;
+    position: absolute;
+    top: -60px;
+    left: calc(-50% + 20px);
+}
+@media screen and (max-width: 1200px) {
+    .bandeau-invest-noel {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 1080px) {
+    .bandeau-invest-noel {
+        display: none;
+    }
+}
