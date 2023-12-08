@@ -38,7 +38,7 @@
 }
 @media screen and (max-width: 1200px) {
     .bandeau-invest-noel {
-        padding: 20px;
+        padding: 20px 30px;
     }
     .bandeau-invest-noel-close {
         top: 4px;
