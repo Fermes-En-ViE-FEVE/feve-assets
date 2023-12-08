@@ -2,9 +2,9 @@
     display: none;
     align-items: center;
     gap: 20px;
-    padding: 40px;
+    padding: 40px 80px;
     justify-content: space-between;
-position: relative;
+    position: relative;
     width: 100%;
     background: white;
 }
