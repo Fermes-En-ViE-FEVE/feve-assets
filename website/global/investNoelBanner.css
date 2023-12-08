@@ -1,9 +1,9 @@
 .bandeau-invest-noel {
     display: none;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
     padding: 40px 80px;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
     width: 100%;
     background: #EDEBE7;
@@ -41,6 +41,7 @@
 @media screen and (max-width: 1200px) {
     .bandeau-invest-noel {
         padding: 20px 30px;
+        gap: 30px;
     }
     .bandeau-invest-noel-close {
         top: 4px;
