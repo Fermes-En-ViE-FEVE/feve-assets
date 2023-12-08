@@ -13,6 +13,6 @@ if (!localStorage.getItem('noel-banner-2023')) {
     })
 }
 const closeBanner = () => {
-    document.querySelector('.bandeau-invest-noel').style.display = 'flex'
+    document.querySelector('.bandeau-invest-noel-wrapper').style.display = 'none'
     localStorage.setItem('noel-banner-2023', 'true')
 }
