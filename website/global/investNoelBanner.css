@@ -14,12 +14,13 @@
     bottom: 0;
     left: 0;
     width: 100vw;
+    z-index: 10000;
 }
 
 .bandeau-invest-noel-close {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 12px;
+    right: 12px;
     width: 25px;
     height: 25px;
     cursor: pointer;
