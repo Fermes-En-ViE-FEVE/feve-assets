@@ -17,8 +17,8 @@
 
 .bandeau-invest-noel-close {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 8px;
+    right: 8px;
     width: 25px;
     height: 25px;
     cursor: pointer;
@@ -38,6 +38,10 @@
 @media screen and (max-width: 1200px) {
     .bandeau-invest-noel {
         padding: 20px;
+    }
+    .bandeau-invest-noel-close {
+        top: 5px;
+        right: 5px;
     }
 }
 @media screen and (max-width: 1080px) {
