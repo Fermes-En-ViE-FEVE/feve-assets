@@ -3,7 +3,11 @@ addEventListener("DOMContentLoaded", (event) => {
         headings: ["Jours", "Heures", "Minutes", "Secondes"],
     }).start();
 });
-if (!localStorage.getItem('noel-banner-2023')) {
+if (
+    !localStorage.getItem('noel-banner-2023') &&
+    !window.location.pathname.includes('formulaire') &&
+    !window.location.pathname.includes('souscription')
+) {
     document.querySelector('.bandeau-invest-noel').style.display = 'flex'
     document.querySelector('.bandeau-invest-noel-close').addEventListener('click', () => {
        closeBanner()
