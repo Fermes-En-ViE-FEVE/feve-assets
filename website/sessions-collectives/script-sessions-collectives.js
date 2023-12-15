@@ -17,7 +17,7 @@ function updateChosenDateInForm(dateNode) {
 	const dateWithoutDayName = dateNode.innerHTML.split(" ");
 	console.log(dateWithoutDayName);
 	const dateToParse = dateWithoutDayName[1];
-	console.log(DateToParse);
+	console.log(dateToParse);
 	const dateRegex = /^\d{2}/;
 	let formattedDate = ""
 	if (dateRegex.test(dateToParse)) {
