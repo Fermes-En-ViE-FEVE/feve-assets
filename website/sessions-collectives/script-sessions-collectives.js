@@ -13,7 +13,9 @@ var lastSessionNodeId = null;
 
 function updateChosenDateInForm(dateNode) {
 	document.getElementsByName('inscription_session_collective')[0].value = dateNode.innerHTML;
-    const dateToParse = dateNode.innerHTML;
+    	
+	const dateWithoutDayName = dateNode.innerHTML.split(" ");
+	const dateToParse = dateWithoutDayName[1];
 	const dateRegex = /^\d{2}/;
 	let formattedDate = ""
 	if (dateRegex.test(dateToParse)) {
