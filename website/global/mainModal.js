@@ -1,6 +1,12 @@
 const isMainModalActive = false
 const mainModal = document.querySelector('#main-modal')
-if (isMainModalActive && mainModal && !localStorage.getItem('millions') && !document.location.pathname.includes('photos-fermes')) {
+if (
+    isMainModalActive &&
+    mainModal &&
+    !localStorage.getItem('millions') &&
+    !document.location.pathname.includes('photos-fermes') &&
+    !document.location.pathname.includes('derniere-ferme')
+) {
     if (
         window.location.href.includes('investir') ||
         window.location.href.includes('offrir-des-actions') ||
