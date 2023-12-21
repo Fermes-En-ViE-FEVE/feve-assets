@@ -15,9 +15,7 @@ function updateChosenDateInForm(dateNode) {
 	document.getElementsByName('inscription_session_collective')[0].value = dateNode.innerHTML;
     	
 	const dateWithoutDayName = dateNode.innerHTML.split(" ");
-	console.log(dateWithoutDayName);
 	const dateToParse = dateWithoutDayName[1];
-	console.log(dateToParse);
 	const dateRegex = /^\d{2}/;
 	let formattedDate = ""
 	if (dateRegex.test(dateToParse)) {
@@ -56,7 +54,6 @@ function getEventsInTable(audience) {
 		}
 
 		const sessionsNode = document.getElementById('date_sessions');
-		console.log(sessionsNode)
 		let html = '';
 		let i=0;
 		for (event in listEvents) {
