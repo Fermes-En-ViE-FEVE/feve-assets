@@ -256,7 +256,6 @@ select{
     display: none;
 }
 .hs_submit .actions {
-    text-align: end;
     margin-top: 0.75rem;
 }
 
