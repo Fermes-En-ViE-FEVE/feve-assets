@@ -8,7 +8,8 @@ MemberStack.onReady.then(member => {
             if (document.querySelector('#nps-wrapper') && !localStorage.getItem('nps') && (localStorage.getItem('visitedPages') && parseInt(localStorage.getItem('visitedPages')) > 10)) {
                 document.querySelector('#nps-wrapper').classList.add('show-nps')
                 document.querySelector('#nps-wrapper #nps button').setAttribute("data-tf-hidden", ("email=" + member["email"]))
-                window.tf.createSlider('tE1MgIrN')
+                const { refresh } = window.tf.createSlider('tE1MgIrN')
+                refresh()
                 //     container: document.querySelector('#nps-wrapper'),
                 // })
             }
