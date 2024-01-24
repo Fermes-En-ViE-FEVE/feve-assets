@@ -4,7 +4,7 @@ MemberStack.onReady.then(member => {
         // if (document.querySelector('#banner')) {
         //     document.querySelector('.banner-button').setAttribute("href", (document.querySelector('.banner-button').getAttribute("href") + '?email=' + member["email"]))
         // }
-        window.tf.createSlider('tE1MgIrN', {
+        const { refresh } = window.tf.createSlider('tE1MgIrN', {
             hidden: {
                 email:  member["email"],
             },
@@ -15,6 +15,7 @@ MemberStack.onReady.then(member => {
             }
         }, 10000)
         document.querySelector('#nps-wrapper #nps').addEventListener('click', () => {
+            refresh()
             setTimeout(() => {
                 localStorage.setItem('nps', 'true')
                 document.querySelector('#nps-wrapper #nps').style.display = "none";
