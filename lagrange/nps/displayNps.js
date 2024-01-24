@@ -7,12 +7,11 @@ MemberStack.onReady.then(member => {
         setTimeout(() => {
             if (document.querySelector('#nps-wrapper') && !localStorage.getItem('nps') && (localStorage.getItem('visitedPages') && parseInt(localStorage.getItem('visitedPages')) > 10)) {
                 document.querySelector('#nps-wrapper').classList.add('show-nps')
-                const { refresh } = window.tf.createSlider('tE1MgIrN', {
+                window.tf.createSlider('tE1MgIrN', {
                     hidden: {
                         email:  member["email"],
                     },
                 })
-                refresh()
             }
         }, 10000)
         document.querySelector('#nps-wrapper #nps').addEventListener('click', () => {
