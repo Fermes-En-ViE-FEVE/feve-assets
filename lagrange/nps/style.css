@@ -1,6 +1,6 @@
 #nps-wrapper {
     position: fixed;
-    bottom: -56px;
+    bottom: -50px;
     right: 20px;
     transition: all 200ms ease-out;
     z-index: 1000;
@@ -13,7 +13,7 @@
     outline: none;
     border: none;
     cursor: pointer;
-    padding: 4px 2px;
+    padding: 10px 20px;
     border-radius: 6px;
     font-size: 1rem;
     align-items:center;
