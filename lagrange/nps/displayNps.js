@@ -11,10 +11,10 @@ MemberStack.onReady.then(member => {
                 window.tf.createWidget('tE1MgIrN')
             }
         }, 10000)
-        document.querySelector('#nps-wrapper button').addEventListener('click', () => {
+        document.querySelector('#nps-wrapper #nps').addEventListener('click', () => {
             setTimeout(() => {
                 localStorage.setItem('nps', 'true')
-                document.querySelector('#nps-wrapper button').style.display = "none";
+                document.querySelector('#nps-wrapper #nps').style.display = "none";
             }, 2000)
         })
     }
