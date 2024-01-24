@@ -7,8 +7,10 @@ MemberStack.onReady.then(member => {
         setTimeout(() => {
             if (document.querySelector('#nps-wrapper') && !localStorage.getItem('nps') && (localStorage.getItem('visitedPages') && parseInt(localStorage.getItem('visitedPages')) > 10)) {
                 document.querySelector('#nps-wrapper').classList.add('show-nps')
-                document.querySelector('#nps-wrapper #nps').setAttribute("data-tf-hidden", ("email=" + member["email"]))
-                window.tf.createWidget('tE1MgIrN')
+                document.querySelector('#nps-wrapper #nps button').setAttribute("data-tf-hidden", ("email=" + member["email"]))
+                window.tf.createWidget('tE1MgIrN', {
+                    container: document.querySelector('#form'),
+                })
             }
         }, 10000)
         document.querySelector('#nps-wrapper #nps').addEventListener('click', () => {
