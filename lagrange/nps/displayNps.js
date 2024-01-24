@@ -9,7 +9,7 @@ MemberStack.onReady.then(member => {
                 document.querySelector('#nps-wrapper').classList.add('show-nps')
                 document.querySelector('#nps-wrapper #nps button').setAttribute("data-tf-hidden", ("email=" + member["email"]))
                 window.tf.createWidget('tE1MgIrN', {
-                    container: document.querySelector('#form'),
+                    container: document.querySelector('body'),
                 })
             }
         }, 10000)
