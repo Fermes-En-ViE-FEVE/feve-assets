@@ -213,7 +213,7 @@ select{
     width: 100% !important;
 }
 
-.no-list .hs-error-msgs .inputs-list {
+.no-list.hs-error-msgs.inputs-list {
     color: red !important;
 }
 
