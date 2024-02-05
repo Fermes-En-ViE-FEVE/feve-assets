@@ -133,7 +133,7 @@ select{
     outline: none;
     transition: box-shadow 0.3s ease;
     font-family: inherit;
-    font-size: 16px;
+    font-size: 14px;
     color: #000;
     outline-color: rgb(84 105 212 / 0.5);
     background-color: rgb(255, 255, 255);
