@@ -116,7 +116,7 @@ select{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='#848485' class='w-6 h-6'> <path stroke-linecap='round' stroke-linejoin='round' d='m19.5 8.25-7.5 7.5-7.5-7.5' /> </svg>") no-repeat !important;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='%23848485' class='w-6 h-6'> <path stroke-linecap='round' stroke-linejoin='round' d='m19.5 8.25-7.5 7.5-7.5-7.5' /> </svg>") no-repeat !important;
     background-size: 12px !important;
     background-position: calc(100% - 12px) calc(50%) !important;
     background-repeat: no-repeat !important;
