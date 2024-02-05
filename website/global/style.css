@@ -286,6 +286,9 @@ select{
 .reagan--widget-loaded {
     display: none;
 }
+.hbspt-form select.is-placeholder {
+    color: #767676 !important;
+}
 /* HUBSPOT */
 
 
