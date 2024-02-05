@@ -128,19 +128,17 @@ select{
     width: 100%;
     padding: 8px 12px;
     border: 1px solid #E4E4E7;
-    border-radius: 4px;
+    border-radius: 6px;
     font-family: inherit;
     font-size: 14px;
     color: #000;
     outline: none;
     background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
 .hbspt-form input:focus,
 .hbspt-form select:focus,
 .hbspt-form textarea:focus {
-    border: 1px solid #E4E4E7;
-    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgb(161, 161, 170) 0px 0px 0px 1px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    border: 1px solid #A1A1AA;
 }
 .hbspt-form fieldset.form-columns-2 .input {
     margin-right:24px !important;
