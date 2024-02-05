@@ -1,11 +1,11 @@
 MemberStack.onReady.then(member => {
-    const elevageModal = document.querySelector('#elevage-2023')
-    if (elevageModal && !localStorage.getItem('enquete-femme-agri') && member.loggedIn && member.email !== 'alexandre.mace+2@feve.co') {
-        MicroModal.show('elevage-2023', {
+    const elevageModal = document.querySelector('#modal-home-lg')
+    if (elevageModal && !localStorage.getItem('appel-candidature-myrtille') && member.loggedIn && member.email !== 'alexandre.mace+2@feve.co') {
+        MicroModal.show('modal-home-lg', {
             onClose: (modal) => {
-                localStorage.setItem('enquete-femme-agri', 'true')
+                localStorage.setItem('appel-candidature-myrtille', 'true')
             }
         })
-        document.querySelector('#elevage-cta').addEventListener('click', (e) => MicroModal.close('elevage-2023'))
+        document.querySelector('#modal-home-lg-cta').addEventListener('click', (e) => MicroModal.close('modal-home-lg'))
     }
 })
