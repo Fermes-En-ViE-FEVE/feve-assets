@@ -36,7 +36,7 @@ function updateSessionNodeColor(currentSessionNodeId) {
 
 //fonction pour récupérer les dates de sessions de Airtable et créer les options en html
 const base_airtable = 'appuuEE6Jc2DV0GO5'; //id de la base Airtable à utiliser
-const api_token = 'pattUKTD9X9Bgxhig.571714b26bac0fa34a1aef8caebf2a15db9e8060cbec6f86f97c91b5df2a42d7'; //clef api avec lecture seule sur la base (compte de Sonic)
+const api_token = 'patlLWaHY81AlDMU3.ad2a92da8275c5a0070d546e9b43b30ec33dc2ce8e88cb974783cca333a846f3'; //clef api avec lecture seule sur la base (compte de Sonic)
 let listEvents = [];
 function getEventsInTable(audience) {
 	return axios.get(
