@@ -24,7 +24,9 @@ function updateChosenDateInForm(dateNode) {
 	document.getElementsByName('date_de_la_session_collective')[0].value = formattedDate;
 	updateSessionNodeColor(dateNode.id);
 	if (document.querySelector('.is-open .modal__container')) {
-		document.querySelector('.is-open .modal__container').scrollBy({top: 400, left: 0, behavior: 'smooth'})
+		setTimeout(() => {
+			document.querySelector('.is-open .modal__container').scrollBy({top: 400, left: 0, behavior: 'smooth'})
+		}, 100)
 	}
 }
 
