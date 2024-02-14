@@ -25,7 +25,8 @@ function updateChosenDateInForm(dateNode) {
 	updateSessionNodeColor(dateNode.id);
 	if (document.querySelector('.is-open .modal__container')) {
 		setTimeout(() => {
-			document.querySelector('.is-open .modal__container').scrollBy({top: 500, left: 0, behavior: 'smooth'})
+			let formPosition = document.querySelector('.is-open #floating-form').offsetTop
+			document.querySelector('.is-open .modal__container').scrollTop = formPosition
 		}, 100)
 	}
 }
