@@ -26,7 +26,8 @@ function updateChosenDateInForm(dateNode) {
 	if (document.querySelector('.is-open .modal__container')) {
 		setTimeout(() => {
 			let formPosition = document.querySelector('.is-open #floating-form').offsetTop
-			document.querySelector('.is-open .modal__container').scrollTop = formPosition
+			document.querySelector('.is-open .modal__container').style.scrollBehavior = 'smooth'
+			document.querySelector('.is-open .modal__container').scrollTop = formPosition - 50
 		}, 100)
 	}
 }
