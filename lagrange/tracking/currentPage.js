@@ -7,6 +7,6 @@ if (
     window.location.pathname !== '/' &&
     window.location.pathname !== ''
 ) {
-    sessionStorage.setItem("grange_current_url", window.location.pathname)
-    console.log('grange_current_url', window.location.pathname)
+    sessionStorage.setItem("grange_current_url", window.location.href)
+    console.log('grange_current_url', window.location.href)
 }
