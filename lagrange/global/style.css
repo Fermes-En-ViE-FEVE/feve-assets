@@ -46,3 +46,6 @@ select{
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+.iframe-not-logged {
+    height: calc(100vh - 90px);
+}
