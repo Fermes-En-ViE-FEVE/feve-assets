@@ -1,5 +1,4 @@
-if (window.screen.width > 768 && !localStorage.getItem('bandeau-appel-offre-02-24') && (window.location.pathname === '/' ||
-    window.location.pathname === '')) {
+if (window.screen.width > 768 && !localStorage.getItem('bandeau-appel-offre-02-24')) {
   document.querySelector('#bandeau-appel-offre').style.display = 'block'
 
   if (document.querySelector('#appel-offre-close')){
