@@ -1,4 +1,4 @@
-let isBandeauActive = false
+let isBandeauActive = true
 let currentBandeauName = 'bandeau-SIA-2024'
 
 if (isBandeauActive && document.querySelector('#bandeau') &&  window.screen.width > 768 && !localStorage.getItem(currentBandeauName) ) {
