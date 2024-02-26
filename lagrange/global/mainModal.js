@@ -10,6 +10,9 @@ MemberStack.onReady.then(member => {
             }
         })
         document.querySelector('#main-modal-cta').addEventListener('click', (e) => MicroModal.close('main-modal'))
-        document.querySelector('#main-modal-close').addEventListener('click', (e) => MicroModal.close('main-modal'))
+        document.querySelector('#main-modal-close').addEventListener('click', (e) => {
+            console.log('hiding modal')
+            MicroModal.close('main-modal')
+        })
     }
 })
