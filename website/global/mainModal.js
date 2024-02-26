@@ -20,5 +20,6 @@ if (
             }
         })
         document.querySelector('#main-modal-cta').addEventListener('click', (e) => MicroModal.close('main-modal'))
+        document.querySelector('#main-modal-close').addEventListener('click', (e) => MicroModal.close('main-modal'))
     }
 }
