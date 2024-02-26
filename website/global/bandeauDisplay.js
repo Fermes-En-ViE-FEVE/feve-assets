@@ -1,15 +1,19 @@
-if (window.screen.width > 768 && !localStorage.getItem('bandeau-appel-offre-02-24')) {
-  document.querySelector('#bandeau-appel-offre').style.display = 'block'
+let isBandeauActive = false
+let currentBandeauName = 'bandeau-nomdubandeau'
 
-  if (document.querySelector('#appel-offre-close')){
-    document.querySelector('#appel-offre-close').addEventListener('click', () => {
-      localStorage.setItem('bandeau-appel-offre-02-24', 'true')
+
+if (isBandeauActive && window.screen.width > 768 && !localStorage.getItem(currentBandeauName)) {
+  document.querySelector('#bandeau').style.display = 'block'
+
+  if (document.querySelector('#bandeau-close')){
+    document.querySelector('#bandeau-close').addEventListener('click', () => {
+      localStorage.setItem(currentBandeauName, 'true')
     })
   }
 
-  if (document.querySelector('#appel-offre-cta')){
-    document.querySelector('#appel-offre-cta').addEventListener('click', () => {
-      localStorage.setItem('bandeau-appel-offre-02-24', 'true')
+  if (document.querySelector('#bandeau-cta')){
+    document.querySelector('#bandeau-cta').addEventListener('click', () => {
+      localStorage.setItem(currentBandeauName, 'true')
     })
   }
 }
