@@ -1,7 +1,13 @@
 let isBandeauActive = true
 let currentBandeauName = 'bandeau-SIA-2024'
 
-if (isBandeauActive && document.querySelector('#bandeau') &&  window.screen.width > 768 && !localStorage.getItem(currentBandeauName)) {
+if (
+    isBandeauActive &&
+    document.querySelector('#bandeau') &&
+    window.screen.width > 768 &&
+    !localStorage.getItem(currentBandeauName) &&
+    !(window.location.pathname === '/' || window.location.pathname === '')
+) {
   document.querySelector('#bandeau').style.display = 'block'
 
   if (document.querySelector('#bandeau-close')){
