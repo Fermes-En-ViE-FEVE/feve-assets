@@ -1,6 +1,7 @@
 const isMainModalActive = true
 let mainModalName = 'main-modal-SIA-2024'
 
+console.log('hi')
     if (isMainModalActive && document.querySelector('#main-modal')  && (window.location.pathname === '/' ||
         window.location.pathname === '') && !localStorage.getItem(mainModalName)) {
         MicroModal.show('main-modal', {
@@ -8,6 +9,7 @@ let mainModalName = 'main-modal-SIA-2024'
                 localStorage.setItem(mainModalName, 'true')
             }
         })
+        console.log("modal")
         document.querySelector('#main-modal-cta').addEventListener('click', (e) => MicroModal.close('main-modal'))
         document.querySelector('#main-modal-close').addEventListener('click', (e) => {
             console.log('hiding modal')
