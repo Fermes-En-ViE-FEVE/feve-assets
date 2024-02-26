@@ -1,9 +1,8 @@
 const isMainModalActive = true
 let mainModalName = 'main-modal-SIA-2024'
 
-MemberStack.onReady.then(member => {
     if (isMainModalActive && document.querySelector('#main-modal')  && (window.location.pathname === '/' ||
-        window.location.pathname === '') && !localStorage.getItem(mainModalName) && member.email !== 'alexandre.mace+2@feve.co') {
+        window.location.pathname === '') && !localStorage.getItem(mainModalName)) {
         MicroModal.show('main-modal', {
             onClose: (modal) => {
                 localStorage.setItem(mainModalName, 'true')
@@ -15,4 +14,3 @@ MemberStack.onReady.then(member => {
             MicroModal.close('main-modal')
         })
     }
-})
