@@ -176,8 +176,7 @@ select{
 
 .hs-button {
     height: auto !important;
-    width: auto !important;
-    padding: 0.5rem 1rem !important;
+    padding: .7rem 1.5rem !important;
     border-radius: 4px !important;
     background-color: #004757 !important;
     color: #fff !important;
@@ -187,6 +186,12 @@ select{
     box-shadow: none !important;
     border: none !important;
 }
+@media (max-width: 450px) {
+    .hs-button {
+        width: 100% !important;
+    }
+}
+
 .hs-button:hover {
     cursor:pointer;
     background-color: #2b7383 !important;
@@ -251,9 +256,13 @@ select{
 .no-list.hs-error-msgs.inputs-list {
     display: none;
 }
+.hs-submit {
+    width: 100%;
+}
 .hs_submit .actions {
     margin-top: 0.75rem;
     display: inline-block;
+    width: 100%;
 }
 
 .leadinModal {
@@ -274,11 +283,6 @@ select{
         width: 100% !important;
     }
 }
-@media (max-width: 365px) {
-    .actions input.hs-button  {
-        min-height: 38px !important;
-        height: auto !important;
-    }}
 
 .reagan--widget-loaded {
     display: none;
