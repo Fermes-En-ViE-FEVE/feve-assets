@@ -31,9 +31,10 @@ function updateChosenDateInForm(dateNode) {
 		}, 100)
 	} else {
 		setTimeout(() => {
-			let formPosition = document.querySelector('.hbspt-form').offsetTop
-			document.style.scrollBehavior = 'smooth'
-			document.scrollTop = formPosition - 50
+			window.scrollTo({
+				top: document.querySelector('.hbspt-form').offsetTop - 100,
+				behavior: "smooth",
+			});
 		}, 100)
 	}
 }
