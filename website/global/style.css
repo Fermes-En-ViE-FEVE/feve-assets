@@ -222,6 +222,7 @@ select{
 }
 .legal-consent-container p {
     font-size: 14px !important;
+    text-align: left;
 }
 .form-big .hbspt-form input,
 .form-big .hbspt-form select {
