@@ -176,6 +176,7 @@ select{
 
 .hs-button {
     height: auto !important;
+    width: auto !important;
     padding: .7rem 1.5rem !important;
     border-radius: 6px !important;
     background-color: #004757 !important;
