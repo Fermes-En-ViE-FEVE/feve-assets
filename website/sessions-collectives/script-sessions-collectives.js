@@ -29,6 +29,12 @@ function updateChosenDateInForm(dateNode) {
 			document.querySelector('.is-open .modal__container').style.scrollBehavior = 'smooth'
 			document.querySelector('.is-open .modal__container').scrollTop = formPosition - 50
 		}, 100)
+	} else {
+		setTimeout(() => {
+			let formPosition = document.querySelector('.hbspt-form').offsetTop
+			document.querySelector('.hbspt-form').style.scrollBehavior = 'smooth'
+			document.querySelector('.hbspt-form').scrollTop = formPosition - 50
+		}, 100)
 	}
 }
 
