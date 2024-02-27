@@ -253,6 +253,7 @@ select{
 }
 .hs_submit .actions {
     margin-top: 0.75rem;
+    display: inline-block;
 }
 
 .leadinModal {
