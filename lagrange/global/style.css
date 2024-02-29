@@ -49,7 +49,3 @@ select{
 .iframe-not-logged {
     height: calc(100vh - 90px);
 }
-
-.button-primary {
-    border-color: black !important;
-}
