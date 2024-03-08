@@ -40,8 +40,8 @@ a.button-primary, .bg-primary a {
 }
 @media (min-width: 1250px) {
     .w-richtext:not(.no-format) p:not(.h3), .head-text p, .w-richtext:not(.no-format) li, .w-richtext:not(.no-format) a {
-        font-size: 19px;
-        line-height: 28px;
+        font-size: 16px;
+        line-height: 24px;
     }
     .w-richtext:not(.no-format) p {
         line-height: 34px;
