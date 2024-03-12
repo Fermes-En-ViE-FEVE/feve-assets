@@ -53,12 +53,13 @@ const base_airtable = 'appuuEE6Jc2DV0GO5'; //id de la base Airtable à utiliser
 const api_token = 'patlLWaHY81AlDMU3.ad2a92da8275c5a0070d546e9b43b30ec33dc2ce8e88cb974783cca333a846f3'; //clef api avec lecture seule sur la base (compte de Sonic)
 let listEvents = [];
 function getEventsInTable(audience) {
-	return axios.get(
-    "https://api.airtable.com/v0/"+ base_airtable +"/events?sort%5B0%5D%5Bfield%5D=Date2&sort%5B0%5D%5Bdirection%5D=asc&view=Grid%20view",
-    { headers: { Authorization: "Bearer " + api_token }}
-    )
-	.then(response => {
-		const records = response.data.records;
+	return fetch("https://api.airtable.com/v0/"+ base_airtable +"/events?sort%5B0%5D%5Bfield%5D=Date2&sort%5B0%5D%5Bdirection%5D=asc&view=Grid%20view", {
+		headers: {
+			Authorization: "Bearer " + api_token
+		}
+	})
+	.then(data => {
+		const records = data.records;
 		for (record in records) {
 			if (records[record].fields.formu === audience & records[record].fields.Calculation === "OK") {
 				//si le record Airtable correspond au bon public cible et la date n'est pas dépassée : ajouter à listEvents
