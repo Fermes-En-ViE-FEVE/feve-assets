@@ -58,7 +58,7 @@ function getEventsInTable(audience) {
 			Authorization: "Bearer " + api_token
 		}
 	})
-	.then(data => {
+	.then(data => data.json()).then( data => {
 		const records = data.records;
 		console.log(data)
 		console.log(records)
