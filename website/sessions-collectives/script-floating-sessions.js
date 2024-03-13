@@ -25,6 +25,25 @@ function showFloatingSessionsCollectivesForm() {
 
 }
 if (document.querySelector('#sessions-collectives-modal')) {
-  getEventsInTable('Investisseur');
+  if (document.querySelector('#sessions-collectives-modal').dataset.airtable) {
+      getEventsInTable(document.querySelector('#sessions-collectives-modal').dataset.airtable)
+  } else {
+    getEventsInTable('Investisseur');
+  }
   document.getElementById('date_sessions').onclick=showFloatingSessionsCollectivesForm;
 }
+
+let element = document.getElementById('floating-sessions-action-button');
+if (element && window.innerWidth <= 768) {
+  element.style.display = 'none';
+}
+window.addEventListener('scroll', function() {
+  let element = document.getElementById('floating-sessions-action-button');
+  if (element && window.innerWidth <= 768) {
+    if (window.pageYOffset >= 300) {
+      element.style.display = 'block';
+    } else {
+      element.style.display = 'none';
+    }
+  }
+});
