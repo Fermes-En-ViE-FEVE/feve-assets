@@ -60,6 +60,8 @@ function getEventsInTable(audience) {
 	})
 	.then(data => {
 		const records = data.records;
+		console.log(data)
+		console.log(records)
 		for (record in records) {
 			if (records[record].fields.formu === audience & records[record].fields.Calculation === "OK") {
 				//si le record Airtable correspond au bon public cible et la date n'est pas dépassée : ajouter à listEvents
