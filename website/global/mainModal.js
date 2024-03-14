@@ -1,4 +1,4 @@
-const isMainModalActive = true
+const isMainModalActive = false
 let mainModalName = 'main-modal-SIA-2024'
 
 if (
