@@ -658,3 +658,12 @@ select{
 .section[theme="Bleu"] .article-author {
     color: white !important;
 }
+
+
+.rich-style h4 {
+    font-weight: 400 !important;
+}
+
+.rich-style h4, .rich-style h3 strong {
+    font-weight: 400 !important;
+}
