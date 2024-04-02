@@ -1,4 +1,4 @@
-let isBandeauActive = true
+let isBandeauActive = false
 let currentBandeauName = 'bandeau-SIA-2024'
 
 if (
