@@ -33,17 +33,17 @@ if (document.querySelector('#sessions-collectives-modal')) {
   document.getElementById('date_sessions').onclick=showFloatingSessionsCollectivesForm;
 }
 
-let element = document.getElementById('floating-sessions-action-button');
-if (element && window.innerWidth <= 768) {
-  element.style.display = 'none';
+let floatingSessionsActionButton = document.getElementById('floating-sessions-action-button');
+if (floatingSessionsActionButton && window.innerWidth <= 768) {
+  floatingSessionsActionButton.style.display = 'none';
 }
 window.addEventListener('scroll', function() {
-  let element = document.getElementById('floating-sessions-action-button');
-  if (element && window.innerWidth <= 768) {
+  let scrollFloatingSessionsActionButton = document.getElementById('floating-sessions-action-button');
+  if (scrollFloatingSessionsActionButton && window.innerWidth <= 768) {
     if (window.pageYOffset >= 300) {
-      element.style.display = 'block';
+      scrollFloatingSessionsActionButton.style.display = 'block';
     } else {
-      element.style.display = 'none';
+      scrollFloatingSessionsActionButton.style.display = 'none';
     }
   }
 });
