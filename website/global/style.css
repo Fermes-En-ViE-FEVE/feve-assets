@@ -667,3 +667,9 @@ select{
 .rich-style h4, .rich-style h3 strong {
     font-weight: 400 !important;
 }
+
+@media (max-width: 768px) {
+    #blog-mobile, #lagrange-link {
+        color: black !important;
+    }
+}
