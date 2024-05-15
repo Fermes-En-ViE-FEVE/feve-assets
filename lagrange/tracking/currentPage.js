@@ -4,6 +4,7 @@ if (
     !window.location.pathname.includes('onboarding') &&
     !window.location.pathname.includes('redirect') &&
     !window.location.pathname.includes('oups') &&
+    !window.location.pathname.includes('trouver-ferme-inscription') &&
     window.location.pathname !== '/' &&
     window.location.pathname !== ''
 ) {
