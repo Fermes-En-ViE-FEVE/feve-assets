@@ -365,7 +365,7 @@ select{
 .bandeau {
     z-index: 10000;
     background-color: #fff;
-    box-shadow: 0 0 14px -11px #C4C4C4;
+    box-shadow: 0 0 26px -11px #C4C4C4;
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
