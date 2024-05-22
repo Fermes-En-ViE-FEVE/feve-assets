@@ -1,5 +1,5 @@
 let isBandeauActive = true
-let currentBandeauName = 'bandeau-nomdubandeau'
+let currentBandeauName = 'bandeau-agricultrice-2024'
 
 
 if (isBandeauActive && document.querySelector('#bandeau') && window.screen.width > 768 && !localStorage.getItem(currentBandeauName)) {
