@@ -364,7 +364,7 @@ select{
 /* BANDEAU */
 .bandeau {
     z-index: 10000;
-    background-color: #D9D9D9;
+    background-color: #fff;
     box-shadow: 0 0 14px -11px #C4C4C4;
     max-width: 100%;
     margin-left: 0;
@@ -400,14 +400,26 @@ select{
     right: 0%;
 }
 .d-flex.align-center.padding-buuton.gap-10 {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-column-gap: 36px;
+    grid-row-gap: 36px;
 }
 .d-flex.align-center.padding-buuton {
     padding: 10px 40px;
 }
 .div-block-285 {
     max-width: 80%;
+}
+@media (max-width: 700px) {
+    .div-block-285 {
+        max-width: 100%;
+    }
+    .d-flex.align-center.padding-buuton {
+        padding: 10px 0;
+    }
+    .d-flex.align-center.padding-buuton.gap-10 {
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+    }
 }
 .bandeau-tag {
     color: #A6A6A6;
