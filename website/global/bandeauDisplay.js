@@ -1,4 +1,4 @@
-let isBandeauActive = false
+let isBandeauActive = true
 let currentBandeauName = 'bandeau-nomdubandeau'
 
 
