@@ -1,6 +1,6 @@
 let isBandeauActive = true
 let currentBandeauName = 'bandeau-agricultrice-2024'
-let preprodOnly = true
+let preprodOnly = false
 
 
 if ((preprodOnly && window.location.href.includes("new-feve") || !preprodOnly) && isBandeauActive && document.querySelector('#bandeau') && window.screen.width > 768 && !localStorage.getItem(currentBandeauName)) {
