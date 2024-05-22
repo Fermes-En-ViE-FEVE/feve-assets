@@ -3,7 +3,7 @@ let currentBandeauName = 'bandeau-agricultrice-2024'
 let preprodOnly = false
 
 
-if ((preprodOnly && window.location.href.includes("new-feve") || !preprodOnly) && isBandeauActive && document.querySelector('#bandeau') && window.screen.width > 768 && !localStorage.getItem(currentBandeauName)) {
+if ((preprodOnly && window.location.href.includes("new-feve") || !preprodOnly) && isBandeauActive && document.querySelector('#bandeau') && !localStorage.getItem(currentBandeauName)) {
   document.querySelector('#bandeau').style.display = 'block'
 
   if (document.querySelector('#bandeau-close')){
