@@ -11,9 +11,7 @@ body {
 .nav-link.w--current {
     color: black;
 }
-.nav-link:hover {
-    color: #efc52e !important;
-}
+
 .nav-link.w--current:hover {
     color: #efc52e !important;
 }
