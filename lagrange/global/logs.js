@@ -1,6 +1,6 @@
 MemberStack.onReady.then(function(member) {  
   if (member.loggedIn) {
-    fetch('https://parcours.feve.co/webhooks/member/logged-in', {
+    fetch('https://app.feve.co/webhooks/member/logged-in', {
 	    method: 'POST',
 	    headers: {
 	        'Content-Type': 'application/json',
