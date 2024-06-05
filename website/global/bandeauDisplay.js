@@ -8,7 +8,7 @@ if (
     isBandeauActive &&
     document.querySelector('#bandeau') &&
     !localStorage.getItem(currentBandeauName) &&
-    !window.location.pathname.includes('feve.co/evenements/')
+    !window.location.href.includes('feve.co/evenements/')
 ) {
   document.querySelector('#bandeau').style.display = 'block'
 
