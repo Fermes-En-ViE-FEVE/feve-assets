@@ -1,7 +1,7 @@
 let isBandeauActive = true
 let currentBandeauName = 'bandeau-agricultrice-2024'
 let preprodOnly = false
-
+const isIframe = window.self !== window.top;
 
 if (
     (preprodOnly && window.location.href.includes("new-feve") || !preprodOnly) &&
@@ -9,7 +9,8 @@ if (
     document.querySelector('#bandeau') &&
     !localStorage.getItem(currentBandeauName) &&
     !window.location.href.includes('feve.co/evenements/') &&
-    !window.location.href.includes('embed')
+    !window.location.href.includes('embed') &&
+    !isIframe
 ) {
   document.querySelector('#bandeau').style.display = 'block'
 
