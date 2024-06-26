@@ -281,7 +281,7 @@ select{
     .hbspt-form fieldset.form-columns-2 .input  {
         margin-right: 0 !important;
     }
-    .input input {
+    .input input:not[type="checkbox"] {
         width: 100% !important;
     }
 }
