@@ -4,7 +4,7 @@ if (
     !window.location.pathname.includes('/inscription') &&
     !window.location.pathname.includes('onboarding') &&
     !window.location.pathname.includes('redirect') &&
-    !window.location.pathname.includes('oups') &&
+    !window.location.pathname.includes('oups')
     //window.location.pathname !== '/' &&
     //window.location.pathname !== ''
 ) {
