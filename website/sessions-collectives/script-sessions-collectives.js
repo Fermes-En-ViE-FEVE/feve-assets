@@ -19,7 +19,7 @@ function updateChosenDateInForm(dateNode) {
 	if (dateRegex.test(dateToParse)) {
 		formattedDate = dateToParse.substr(6,4) + "-" + dateToParse.substr(3,2) + "-" + dateToParse.substr(0,2);
 	}
-	document.getElementsByName('date_de_la_session_collective')[0].value = formattedDate;
+	document.querySelector('#hs-form-iframe-0').contentDocument.getElementsByName('date_de_la_session_collective')[0].value = formattedDate;
 	updateSessionNodeColor(dateNode.id);
 	if (document.querySelector('.is-open .modal__container')) {
 		setTimeout(() => {
@@ -30,7 +30,7 @@ function updateChosenDateInForm(dateNode) {
 	} else {
 		setTimeout(() => {
 			window.scrollTo({
-				top: document.querySelector('.hbspt-form').offsetTop - 100,
+				top: document.querySelector('#hs-form-iframe-0').offsetTop - 100,
 				behavior: "smooth",
 			});
 		}, 100)
