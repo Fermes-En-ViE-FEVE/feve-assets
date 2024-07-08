@@ -31,7 +31,7 @@ function updateChosenDateInForm(dateNode) {
 	} else {
 		setTimeout(() => {
 			window.scrollTo({
-				top: document.querySelector('#hs-form-iframe-0').offsetTop - 100,
+				top: document.querySelector('#hs-form-iframe-0').getBoundingClientRect().top + document.documentElement.scrollTop - 100,
 				behavior: "smooth",
 			});
 		}, 100)
