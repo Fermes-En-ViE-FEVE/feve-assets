@@ -19,6 +19,7 @@ function updateChosenDateInForm(dateNode) {
 	if (dateRegex.test(dateToParse)) {
 		formattedDate = dateToParse.substr(6,4) + "-" + dateToParse.substr(3,2) + "-" + dateToParse.substr(0,2);
 	}
+	document.querySelector('#hs-form-iframe-0').contentDocument.getElementsByName('inscription_session_collective')[0].value = dateNode.innerHTML;
 	document.querySelector('#hs-form-iframe-0').contentDocument.getElementsByName('date_de_la_session_collective')[0].value = formattedDate;
 	updateSessionNodeColor(dateNode.id);
 	if (document.querySelector('.is-open .modal__container')) {
