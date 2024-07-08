@@ -39,9 +39,9 @@ function updateChosenDateInForm(dateNode) {
 }
 
 function updateSessionNodeColor(currentSessionNodeId) {
-	document.getElementById(currentSessionNodeId).style.backgroundColor='#ffeb83';
+	document.getElementById(currentSessionNodeId).style.backgroundColor='#f6f6f7';
 	if (lastSessionNodeId !== null) {
-		document.getElementById(lastSessionNodeId).style.backgroundColor='#edebe7';
+		document.getElementById(lastSessionNodeId).style.backgroundColor='#fff';
 	}
 	lastSessionNodeId = currentSessionNodeId;
 }
