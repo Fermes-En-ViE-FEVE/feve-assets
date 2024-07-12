@@ -12,9 +12,6 @@ body {
     color: black;
 }
 
-.nav-link.w--current:hover {
-    color: #efc52e !important;
-}
 @media (max-width: 800px) {
     .nav-menu-2 {
         max-height: calc(100vh - 65px);
