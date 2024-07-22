@@ -1,5 +1,5 @@
-let isBandeauActive = false
-let currentBandeauName = 'bandeau-agricultrice-2024'
+let isBandeauActive = true
+let currentBandeauName = 'bandeau-bretagne-normandie-2024'
 let preprodOnly = false
 const isIframe = window.self !== window.top;
 
