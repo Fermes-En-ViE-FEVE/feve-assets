@@ -1,4 +1,4 @@
-let isBandeauActive = false
+let isBandeauActive = true
 let currentBandeauName = 'bandeau-offre-ver-de-terre-2024'
 let preprodOnly = false
 let ppOnly = true
