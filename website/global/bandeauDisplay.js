@@ -1,5 +1,5 @@
 let isBandeauActive = false
-let currentBandeauName = 'bandeau-bretagne-normandie-2024'
+let currentBandeauName = 'bandeau-offre-ver-de-terre-2024'
 let preprodOnly = false
 const isIframe = window.self !== window.top;
 
