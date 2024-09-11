@@ -1,5 +1,5 @@
-let isBandeauActive = false
-let currentBandeauName = 'bandeau-SIA-2024'
+let isBandeauActive = true
+let currentBandeauName = 'bandeau-ver-de-terre'
 
 if (
     isBandeauActive &&
