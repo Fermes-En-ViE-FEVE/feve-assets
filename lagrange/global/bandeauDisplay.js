@@ -4,7 +4,7 @@ let currentBandeauName = 'bandeau-app-elevage-24'
 if (
     isBandeauActive &&
     document.querySelector('#bandeau') &&
-    window.screen.width > 768 &&
+    window.innerWidth > 768 &&
     !localStorage.getItem(currentBandeauName) &&
     (window.location.pathname === '/' || window.location.pathname === '')
 ) {
