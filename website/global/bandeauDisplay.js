@@ -1,5 +1,5 @@
 let isBandeauActive = true
-let currentBandeauName = 'bandeau-offre-ver-de-terre-2024'
+let currentBandeauName = 'bandeau-app-elevage-24'
 let preprodOnly = false
 let ppOnly = true
 const isIframe = window.self !== window.top;
