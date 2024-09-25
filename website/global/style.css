@@ -414,8 +414,8 @@ select{
 @media (max-width: 768px) {
     .bandeau-close {
         position: absolute;
-        top: 8px;
-        right: 8px;
+        top: 16px;
+        right: 16px;
     }
     .bandeau-inner-wrapper {
         flex-direction: column;
