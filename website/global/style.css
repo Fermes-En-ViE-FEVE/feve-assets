@@ -377,7 +377,7 @@ select{
 .bandeau-inner-wrapper {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 48px;
     justify-content: center;
 }
 .bandeau-content {
@@ -419,6 +419,7 @@ select{
     }
     .bandeau-inner-wrapper {
         flex-direction: column;
+        gap: 24px;
     }
     .bandeau-description {
         max-width: 100%;
