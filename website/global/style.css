@@ -417,6 +417,12 @@ select{
         top: 8px;
         right: 8px;
     }
+    .bandeau-inner-wrapper {
+        flex-direction: column;
+    }
+    .bandeau-description {
+        max-width: 100%;
+    }
 }
 /* BANDEAU */
 
