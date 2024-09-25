@@ -368,7 +368,7 @@ select{
     box-shadow: 0 0 26px -11px #C4C4C4;
     width: 100vw;
     padding: 24px 24px;
-    display: block;
+    display: none;
     position: fixed;
     bottom: 0;
     left: 0;
