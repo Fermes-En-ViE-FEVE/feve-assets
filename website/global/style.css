@@ -35,18 +35,7 @@ a.button-primary, .bg-primary a {
 .button-secondary {
     color: #fff !important;
 }
-.w-richtext:not(.no-format) .h3 {
-    margin-bottom: 1rem;
-}
-@media (min-width: 1250px) {
-    .w-richtext:not(.no-format) p:not(.h3), .head-text p, .w-richtext:not(.no-format) li, .w-richtext:not(.no-format) a {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .w-richtext:not(.no-format) p {
-        line-height: 34px;
-    }
-}
+
 ul.yellow-bullets {
     list-style: none;
 }
@@ -98,16 +87,35 @@ ul.yellow-bullets li::before {
 
 
 /* RICH TEXT */
-.w-richtext p {
-    max-width: 100%;
-}
-.w-richtext figure { max-width: 100% !important;}
-.w-richtext ul {font-size: 19px; line-height: 33px;}
-.w-richtext figure.w-richtext-figure-type-video, .w-richtext figure[data-rt-type="video"] {
-    width: 100% !important;
-    height:auto !important;
-    padding-bottom: 55% !important;
-}
+/*.w-richtext p {*/
+/*    max-width: 100%;*/
+/*}*/
+/*.w-richtext figure { max-width: 100% !important;}*/
+/*.w-richtext ul {font-size: 19px; line-height: 33px;}*/
+/*.w-richtext figure.w-richtext-figure-type-video, .w-richtext figure[data-rt-type="video"] {*/
+/*    width: 100% !important;*/
+/*    height:auto !important;*/
+/*    padding-bottom: 55% !important;*/
+/*}*/
+/*.w-richtext:not(.no-format) .h3 {*/
+/*    margin-bottom: 1rem;*/
+/*}*/
+/*@media (min-width: 1250px) {*/
+/*    .w-richtext:not(.no-format) p:not(.h3), .head-text p, .w-richtext:not(.no-format) li, .w-richtext:not(.no-format) a {*/
+/*        font-size: 16px;*/
+/*        line-height: 24px;*/
+/*    }*/
+/*    .w-richtext:not(.no-format) p {*/
+/*        line-height: 34px;*/
+/*    }*/
+/*}*/
+/*.rich-style h4 {*/
+/*    font-weight: 400 !important;*/
+/*}*/
+
+/*.rich-style h4, .rich-style h3 strong {*/
+/*    font-weight: 400 !important;*/
+/*}*/
 /* RICH TEXT */
 
 
@@ -654,15 +662,6 @@ select{
 
 .section[theme="Bleu"] .article-author {
     color: white !important;
-}
-
-
-.rich-style h4 {
-    font-weight: 400 !important;
-}
-
-.rich-style h4, .rich-style h3 strong {
-    font-weight: 400 !important;
 }
 
 @media (max-width: 768px) {
