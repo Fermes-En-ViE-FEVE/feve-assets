@@ -327,20 +327,9 @@ select{
     display:none !important;
 }
 
-.tocitem.toc-h3::before {
-    display: block;
-    content: '';
-    width: 6px;
-    height: 6px;
-    background: black;
-    position: absolute;
-    left: 55px;
-    top: 50%;
-    transform: translateY(-50%);
-}
 .toc-h3 {
     position: relative;
-    padding-left: 4.5rem;
+    padding-left: 1rem;
 }
 .bg-secondary a.w--current {
     color: inherit;
