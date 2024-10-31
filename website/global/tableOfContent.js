@@ -10,7 +10,7 @@ document.getElementById("content").querySelectorAll(TocField).forEach(function(h
     }
   });
   
- // item.setAttribute("onclick", "scrollTarget(\'" + heading.id + "\')");
+ item.setAttribute("onclick", "scrollTarget(\'" + heading.id + "\')");
   document.querySelector("#toc").appendChild(item); // places each item inside the Table of Contents div
   document.querySelectorAll('.toc-multiple').forEach(tocMultiple => {
     if (item.classList.contains('toc-h2')) {
@@ -20,8 +20,9 @@ document.getElementById("content").querySelectorAll(TocField).forEach(function(h
 });
 }
 
-function scrollTarget(tgt) { 
-var target = document.getElementById(tgt);
-var negoffset = 350;
-window.scrollTo({top: (target.offsetTop + negoffset), behavior: "smooth"})
-};
+function scrollTarget(tgt) {
+  let target = document.getElementById(tgt);
+  let negoffset = 350;
+  let targetPosition = target.getBoundingClientRect().top + window.scrollY - negoffset;
+  window.scrollTo({top: targetPosition, behavior: "smooth"});
+}
