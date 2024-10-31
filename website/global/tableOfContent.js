@@ -10,7 +10,7 @@ document.getElementById("content").querySelectorAll(TocField).forEach(function(h
     }
   });
   
-  item.setAttribute("onclick", "scrollTarget(\'" + heading.id + "\')");
+ // item.setAttribute("onclick", "scrollTarget(\'" + heading.id + "\')");
   document.querySelector("#toc").appendChild(item); // places each item inside the Table of Contents div
   document.querySelectorAll('.toc-multiple').forEach(tocMultiple => {
     if (item.classList.contains('toc-h2')) {
