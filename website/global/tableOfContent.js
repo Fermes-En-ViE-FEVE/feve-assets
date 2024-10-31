@@ -22,7 +22,7 @@ document.getElementById("content").querySelectorAll(TocField).forEach(function(h
 
 function scrollTarget(tgt) {
   let target = document.getElementById(tgt);
-  let negoffset = 350;
+  let negoffset = 200;
   let targetPosition = target.getBoundingClientRect().top + window.scrollY - negoffset;
   window.scrollTo({top: targetPosition, behavior: "smooth"});
 }
