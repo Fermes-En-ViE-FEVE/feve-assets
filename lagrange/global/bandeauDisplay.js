@@ -1,5 +1,5 @@
-let isBandeauActive = false
-let currentBandeauName = 'bandeau-app-elevage-24'
+let isBandeauActive = true
+let currentBandeauName = 'bandeau-cultive'
 
 if (
     isBandeauActive &&
