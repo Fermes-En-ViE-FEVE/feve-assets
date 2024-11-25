@@ -20,18 +20,6 @@ const sessionsCollectivesButtons = document.querySelectorAll('.sessions-collecti
     MicroModal.show('sessions-collectives-modal');
   })
 })
-function showFloatingSessionsCollectivesForm() {
-  document.getElementById('floating-form').style.display='block';
-
-}
-if (document.querySelector('#sessions-collectives-modal')) {
-  if (document.querySelector('#sessions-collectives-modal').dataset.airtable) {
-      getEventsInTable(document.querySelector('#sessions-collectives-modal').dataset.airtable)
-  } else {
-    getEventsInTable('Investisseur');
-  }
-  document.getElementById('date_sessions').onclick=showFloatingSessionsCollectivesForm;
-}
 
 let floatingSessionsActionButton = document.getElementById('floating-sessions-action-button');
 if (floatingSessionsActionButton && window.innerWidth <= 768) {
