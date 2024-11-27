@@ -3,11 +3,13 @@ MemberStack.onReady.then(member => {
         if (window.location.href.includes('presentation=true')) {
             window.history.replaceState({}, document.title, "/" + "accueil");
         }
-        MicroModal.show('modal-onboarding', {
-            onClose: (modal) => {
-                member.updateProfile({onboardingModal: "true"}, false)
-            }
-        });
+        if (document.querySelector('#modal-onboarding')) {
+            MicroModal.show('modal-onboarding', {
+                onClose: (modal) => {
+                    member.updateProfile({onboardingModal: "true"}, false)
+                }
+            });
+        }
         document.querySelector('#slider-last-next').addEventListener('click', (e) => {
             member.updateProfile({onboardingModal: "true"}, false)
         })
