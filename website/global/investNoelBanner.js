@@ -23,7 +23,7 @@
 //     localStorage.setItem('noel-banner-2023', 'true')
 // }
 
-const ppUrlsNoelBanner = [
+const ppUrlsNoelBanner = ppUrlsNoelBanner || [
     'https://www.feve.co/',
     'https://www.feve.co',
     'https://www.feve.co/installation-agricole',
