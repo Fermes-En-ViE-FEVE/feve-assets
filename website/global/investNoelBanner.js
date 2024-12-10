@@ -22,28 +22,3 @@
 //     document.querySelector('.bandeau-invest-noel-wrapper').style.display = 'none'
 //     localStorage.setItem('noel-banner-2023', 'true')
 // }
-
-const ppUrlsNoelBanner = [
-    'https://www.feve.co/',
-    'https://www.feve.co',
-    'https://www.feve.co/installation-agricole',
-    'https://www.feve.co/je-cherche-une-ferme-a-reprendre',
-    'https://www.feve.co/je-finance-ma-ferme',
-    'https://www.feve.co/installation-agricole/sessions-d-information',
-    'https://www.feve.co/les-feves-financees',
-    'https://www.feve.co/ressources-installation',
-    'https://www.feve.co/guides-pratiques/guide-de-linstallation-agricole',
-    'https://www.feve.co/guides-pratiques/guide-des-aides-installation',
-    'https://www.feve.co/guides-pratiques/guide-de-la-formation-agricole'
-];
-
-if (ppUrlsNoelBanner.includes(window.location.href)) {
-    const campaignBanner = document.querySelector('.invest-campaign-banner');
-    if (campaignBanner) {
-        campaignBanner.style.display = "none";
-    }
-    const logoFeve = document.querySelector('.logo-feve');
-    if (logoFeve) {
-        logoFeve.style.marginTop = "0";
-    }
-}
