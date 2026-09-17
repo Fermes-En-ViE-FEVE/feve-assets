@@ -623,3 +623,19 @@ select{
         color: black !important;
     }
 }
+
+#invest-campaign-link {
+    color: black !important;
+    font-size: 14px !important;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+/* Skip rendering below-fold sections (jamais sur une section qui héberge une modale :
+   content-visibility piège le position:fixed de l'overlay → modale rendue hors écran) */
+.section:nth-of-type(n+5):not(:has(.modal)) {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 800px;
+}
